@@ -18,31 +18,36 @@ public class Ejercicio24 {
      */
     public static void main(String[] args) {
          
-        Scanner scanner = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in); //Scanner de entrada 
+        
+        System.out.println("Por favor, introduzca la nota de Programación: "); //Instrucciones
 
-        System.out.print("Por favor, introduzca la nota de Programación: ");
-        double programacion = scanner.nextDouble();
+        double programacion = entrada.nextDouble(); //Le estamos dando valor a cada entrada como repetiremos a continuación 
+        
+        System.out.println("Introduzca la nota de Lenguajes de Marcas: ");
+        
+        double lenguajesDeMarcas = entrada.nextDouble();
+        
+        System.out.println("Introduzca la nota de Base de Datos: ");
+        
+        double baseDeDatos = entrada.nextDouble();
+        
+        System.out.println("Introduzca la nota de Entornos de Desarrollo: ");
+        
+        double entornosDeDesarrollo = entrada.nextDouble();
+        
+        System.out.println("Introduzca la nota de Sistemas Informáticos: ");
+        
+        double sistemasInformaticos = entrada.nextDouble();
+        
+        System.out.println("Por último, introduzca la nota de Formación y Orientación Laboral");
+        
+        double formacionYOrientacionLaboral = entrada.nextDouble();
 
-        System.out.print("Introduzca la nota de Lenguajes de Marcas: ");
-        double lenguajesDeMarcas = scanner.nextDouble();
-
-        System.out.print("Introduzca la nota de Base de Datos: ");
-        double baseDeDatos = scanner.nextDouble();
-
-        System.out.print("Introduzca la nota de Entornos de Desarrollo: ");
-        double entornosDeDesarrollo = scanner.nextDouble();
-
-        System.out.print("Introduzca la nota de Sistemas Informáticos: ");
-        double sistemasInformaticos = scanner.nextDouble();
-
-        System.out.print("Por último, introduzca la nota de Formación y Orientación Laboral: ");
-        double formacionYOrientacionLaboral = scanner.nextDouble();
-
-        double notaMedia = (programacion + lenguajesDeMarcas + baseDeDatos +
+        double notaMedia = (programacion + lenguajesDeMarcas + baseDeDatos +   //variable con la suma de las diferentes entradas que tenemos anteriormente y la dividimos entre 6 para obtener el calculo
                             entornosDeDesarrollo + sistemasInformaticos +
                             formacionYOrientacionLaboral) / 6;
-
-        System.out.printf("Su nota media del curso es: ", notaMedia);
+        System.out.println("Su nota media del curso es: " +notaMedia); //impresión con el resultado que nos pide el ejercicio que cojemos de la anterior variable 
     }
     
 }
