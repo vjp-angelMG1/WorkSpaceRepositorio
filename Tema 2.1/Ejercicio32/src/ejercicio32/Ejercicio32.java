@@ -32,7 +32,7 @@ public class Ejercicio32 {
            billetes10 = (dinero % 20)/ 10; // cuantos billetes de 10 saco de las sobras de 20
            billetes5 = (dinero % 10)/ 5; // cuantos billetes de 5 saco de las sobras de 10
            monedas2 = (dinero % 5)/ 2; // cuantas monedas de 2 saco de las sobras de 5
-           monedas1 = dinero % 2; //cuantas monedas de 1 saco de las sobras de 2
+           monedas1 = dinero % 2; //cuantas monedas de 1 saco de las sobras de 2.
                    
 
        
