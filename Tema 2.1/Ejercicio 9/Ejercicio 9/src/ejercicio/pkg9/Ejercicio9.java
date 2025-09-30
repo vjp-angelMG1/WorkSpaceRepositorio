@@ -26,7 +26,7 @@ public class Ejercicio9 {
         radio = 3.55f;
         diametro = 2f; 
         resultado = 2*pi*radio;
-        System.out.println("la longuitud de una circunferencia cuyo" + radio + 2 + "*" + pi + " es igual a "+ resultado+ "metros");
+        System.out.println("la longuitud de una circunferencia cuyo radio es igual a " + radio + " = "+ resultado + " metros");
         
         
         

@@ -13,6 +13,9 @@ public class Ejericicio26 {
     
     
     public static void main(String[] args) {
+        
+        int numero;
+        int C1.C2.C3,C4;
         Scanner entrada =new Scanner(System.in);
         
 
@@ -21,10 +24,10 @@ public class Ejericicio26 {
     
     // Mostramos las cifras sin hacer validación
         System.out.println("La descomposicion del numero es:");
-        System.out.println("X: " + numero.charAt(0));
-        System.out.println("Y: " + numero.charAt(1));
-        System.out.println("Z: " + numero.charAt(2));
-        System.out.println("W: " + numero.charAt(3));
+        System.out.println("X: " + );
+        System.out.println("Y: " + );
+        System.out.println("Z: " + );
+        System.out.println("W: " + );
     
     //Validar que el imput sea numérico y tenga 4 cifras
     }
