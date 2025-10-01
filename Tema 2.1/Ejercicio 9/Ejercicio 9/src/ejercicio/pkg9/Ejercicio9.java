@@ -13,20 +13,16 @@ package ejercicio.pkg9;
  */
 public class Ejercicio9 {
 
-    /**
-     * @param args the command line arguments
-     */
+    final static double PI = 3.14f; //Variable constante por lo que siempre tiene que ir fuera es decir antes de la variable metódo main
+    
     public static void main(String[] args) {
-        float pi;
-        float radio; //diametro=2
-        float diametro;
-        float resultado; //longuítud de una circunferencia 2*pi*radio
+ 
+        double radio = 3.55; //Variable, usamos double por que son decimales y es mas preciso que float
+        double diametro = 2;
+        double resultado = diametro*PI*radio; //longuítud de una circunferencia 2*pi*radio
         
-        pi = 3.1416f;
-        radio = 3.55f;
-        diametro = 2f; 
-        resultado = 2*pi*radio;
-        System.out.println("la longuitud de una circunferencia cuyo radio es igual a " + radio + " = "+ resultado + " metros");
+       
+        System.out.println("la longuitud de una circunferencia cuyo radio es igual a " + radio + " es  = "+ resultado + " metros");
         
         
         

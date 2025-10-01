@@ -14,15 +14,15 @@ public class Ejercicio16 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int cartera;
-        int billeteGrande;
-        int billetePequeño;
+        int cartera = 130;
+        int billete50 = 50;
+        int billete10 = 10;
         
-        cartera = 130;
-        billeteGrande = cartera/50;
-        billetePequeño = cartera/10;
+        int num50 = cartera/ billete50 ;
+        int resto = cartera % billete50;
+        int num10 = resto/10;
         
-        System.out.println("130 euros hacen un total de: " + 2 + "*" + billeteGrande + "y" + 3 + "*" + billetePequeño + "=" + cartera );
+        System.out.println("130 euros hacen un total de: " + num50 + " Billetes de 50 euros y " + num10 + " billetes de 10 euros" );
         
         
     }
