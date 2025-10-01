@@ -9,7 +9,7 @@ package ejercicio13;
  * @author Ángel 
  * @since 27/09/2025
  * 
- */
+ */ //Ejercicio de vasos
 public class Ejercicio13 {
 
     /**
@@ -24,7 +24,7 @@ public class Ejercicio13 {
         System.out.println("la variable numero1 = " + numero1);
         System.out.println("la variable numero2 = " + numero2);
         
-        
+        //despues del intercambio
         numero1 = numero2;        
         numero2 = aux;
         
