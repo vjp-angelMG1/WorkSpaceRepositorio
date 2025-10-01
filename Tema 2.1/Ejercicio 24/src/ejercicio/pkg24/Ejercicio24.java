@@ -43,6 +43,7 @@ public class Ejercicio24 {
                             formacionYOrientacionLaboral) / 6;
 
         System.out.printf("Su nota media del curso es: ", notaMedia);
+        
     }
     
 }

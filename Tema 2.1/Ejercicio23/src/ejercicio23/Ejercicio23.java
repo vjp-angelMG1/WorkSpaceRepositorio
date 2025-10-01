@@ -29,7 +29,8 @@ public class Ejercicio23 {
         double totalCompra = precioUnidad * cantidad;
 
         // Mostrar el resultado
-        System.out.println("El precio total de su compra es de: " + String.format("%.2f", totalCompra) + " Euros.");
+        System.out.println("El precio total de tu compra es "+totalCompra);
+        
     }
     
 }
