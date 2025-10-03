@@ -24,10 +24,10 @@ public class Ejericicio26 {
     
     // Mostramos las cifras sin hacer validación
         System.out.println("La descomposicion del numero es:");
-        System.out.println("X: " + );
-        System.out.println("Y: " + );
-        System.out.println("Z: " + );
-        System.out.println("W: " + );
+        System.out.println("X: " +C1 );
+        System.out.println("Y: " +C2 );
+        System.out.println("Z: " +C3);
+        System.out.println("W: " +C4+);
     
     //Validar que el imput sea numérico y tenga 4 cifras
     }

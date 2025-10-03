@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  *
  * @author Ángel
- * @Since 30/09/2025
+ * 
  */
 public class Ejercicio32 {
 
