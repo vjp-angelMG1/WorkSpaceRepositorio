@@ -16,7 +16,7 @@ public class Ejercicio01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {  //método main
-            int numero;
+            int numero; //Declara la variable
         Scanner entrada = new Scanner(System.in);// entrada scanner nueva para darle valor a un objeto
         
         System.out.println("Porfavor introduzca un numero"); //Impresion de numero de entrada
