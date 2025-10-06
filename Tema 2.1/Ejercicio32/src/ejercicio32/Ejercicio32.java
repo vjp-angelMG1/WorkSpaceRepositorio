@@ -5,28 +5,28 @@
 package ejercicio32;
 //
 
-import java.util.Scanner;
+import java.util.Scanner; //darle importación la carpeta java util desde scanner
 
 /**
  *
- * @author Ángel
- * 
+ * @author Ángel     // Etiqueta de descripción de el autor que lo hizo
+ * @since 06/10/2025 // Etiqueta de descripción de la fecha en la que se realizo 
  */
-public class Ejercicio32 {
+public class Ejercicio32 { //Nombre del ejercicio
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+    public static void main(String[] args) { //método main
+        Scanner entrada = new Scanner(System.in); //Entea del scanner nueva para darle valor al objeto
         
         int dinero;   //dinero total //Variable
-        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   En lo que se dividen los billetes //Variable
-              System.out.print("Introduce un importe en euros: ");
-            dinero = entrada.nextInt();
+        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   VAriable que muestra en lo que se van a dividir los billetes y las monedas //Variable
+              System.out.print("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
+            dinero = entrada.nextInt(); //valor que le voy a dar de entrada al dinero
         
 
-        // Billetes de 50 euros
+        
            billetes50 = dinero/50; // cuantos billetes de 50 puedo sacar en total
            billetes20 = (dinero % 50)/ 20; //cuantos billetes de 20 saco de las sobras de 50
            billetes10 = (dinero % 20)/ 10; // cuantos billetes de 10 saco de las sobras de 20
@@ -39,7 +39,7 @@ public class Ejercicio32 {
 
       
 
-        // Mostrar resultados
+        // Muestra los resultados atraves de la impresión de los diferentes billetes y monedas 
         System.out.println("Desglose del importe: " + dinero + " euros");
         System.out.println("Billetes de 50 euros: " + billetes50);
         System.out.println("Billetes de 20 euros: " + billetes20);

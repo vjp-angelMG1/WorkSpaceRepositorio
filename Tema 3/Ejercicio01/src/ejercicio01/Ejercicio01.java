@@ -4,18 +4,18 @@
  */
 package ejercicio01; // Implementa un algorítmo en Java que le pida a un usuario un número por teclado.
                      //Posteriormente el programa le dirá al usuario si el número introducido es positivo o negativo. 
-import java.util.Scanner; //darle importación java util desde Scanner
+import java.util.Scanner; //darle importación java util desde La carpeta Scanner
 /**
  *
- * @author Ángel //nombrar autor 
- * @since 06/10/2025 //nombrar fecha
+ * @author Ángel //Etiqueta de Descripcion de la persona que realiza el ejercicio.
+ * @since 06/10/2025 //Etiqueta de Descripcion de la fecha que se realiza el ejercicio.
  */
 public class Ejercicio01 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {  //método main programa que crea una clave de acceso
+    public static void main(String[] args) {  //método main
             int numero;
         Scanner entrada = new Scanner(System.in);// entrada scanner nueva para darle valor a un objeto
         
@@ -28,7 +28,7 @@ public class Ejercicio01 {
             
             System.out.println("El numero introducido es negativo" ); //Impresion de la primera Condicional
        
-      } else { 
+      } else { // Condicional con el else para ver si al no cumplirse la primera condicion se cumple la segunda
                 System.out.println("El numero introducido es positivo" );// Impresion de la segunda Condicional
             }       
         
