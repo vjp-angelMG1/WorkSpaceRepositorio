@@ -27,10 +27,10 @@ public class Ejercicio02numeros {
         
         if(numero1>10){ //Condicional si el numero1 es mayor al 10 se cumple la condición
             int resultadoMulti = numero1 * numero2; //Variable con el calculo de la multiplicacion de los dos numeros en caso de que se cumpla la condicion
-            System.out.println("La operacion que se realizo es multiplicacion y el resultado es "+resultadoMulti); //Impresión del resultado 
+            System.out.println("La operacion que se realizo es multiplicacion y el resultado es "+resultadoMulti); //Impresión del resultado de la multiplicación
         }else{
-            int resultadoSuma = numero1 + numero2;
-            System.out.println("La operacion que se realizo es suma y el resultado es " +resultadoSuma);
+            int resultadoSuma = numero1 + numero2; //Variable con el calculo de la suma de los dos numeros en caso de que se cumpla la condicion
+            System.out.println("La operacion que se realizo es suma y el resultado es " +resultadoSuma); //Impresión del resultado de la suma
                     
                }
             
