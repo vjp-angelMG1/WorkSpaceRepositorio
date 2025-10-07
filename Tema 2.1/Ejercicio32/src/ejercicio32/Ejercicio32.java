@@ -18,11 +18,11 @@ public class Ejercicio32 { //Nombre del ejercicio
      * @param args the command line arguments
      */
     public static void main(String[] args) { //método main
-        Scanner entrada = new Scanner(System.in); //Entea del scanner nueva para darle valor al objeto
+        Scanner entrada = new Scanner(System.in); //Entrada del scanner nueva para darle valor al objeto
         
         int dinero;   //dinero total //Variable
-        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   VAriable que muestra en lo que se van a dividir los billetes y las monedas //Variable
-              System.out.print("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
+        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   Variable que muestra en lo que se van a dividir los billetes y las monedas //Variable
+             System.out.println("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
             dinero = entrada.nextInt(); //valor que le voy a dar de entrada al dinero
         
 
