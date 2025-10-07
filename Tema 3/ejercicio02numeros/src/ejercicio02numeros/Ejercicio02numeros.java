@@ -7,7 +7,8 @@ package ejercicio02numeros;
 import java.util.Scanner; //importación de la libreria java util desde scanner
 /**
  *
- * @author alumno
+ * @author Ángel
+ * @since 07/10/2025
  */
 public class Ejercicio02numeros {
 
