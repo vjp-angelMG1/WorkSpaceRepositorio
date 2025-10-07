@@ -19,24 +19,35 @@ public class Ejercicio06 {
             
         int nota; //Declara la variable
         
-            nota=entrada.nextInt(); //Recoje el numero de la variable
-        System.out.println("la nota del alumno esta entre 0 y 10"); //Impresion de la condicional principal esta ENTRE 0 y 10
-                
+        System.out.println("Escribe tu nota entre 0 y 10"); //Impresion de la condicional principal esta ENTRE 0 y 10
+        nota=entrada.nextInt(); //Recoje el numero de la variable
        
-        if ( nota <0 || nota >10 ){ //Condicional si la nota es menor que 0 o la nota es mayor que diez entonces no se cumple la condicion if y pasamos a las demas condiciones esta condicional usa el operador lógico OR representado ||
+      
             
-        }else if (nota >=0 && nota <=4){ //Condicional else if que al cumplirseque dice que si la nota es igual o mayor a 0 y la nota es menor o igual a 4 se da esta condicion que es suspenso por lo tanto las otras else if no se dan, esta condicional esta utilizando el operador lógico AND representado &&
-            System.out.println("el alumno ha obtenido entre 0 y 4 suspenso");   //Impresión de la condicional anterior que expresa que el resultado es suspenso
-        }else if (nota >=5 && nota <=6){ //Condicional que dice que si la nota es igual o mayor a 5 y la nota es igual o menor a 6 se da esta condicion que es bien esta condicional esta utilizando el operador lógico AND representado &&
-            System.out.println("el alumno ha obtenido entre 5 y 6 = bien"); //Impresion de la condicional anterior que expresa que el resultado es bien
-        }else if (nota >=7 && nota <=8){ //Condicional  que dice que si la nota es igual o mayor a 7 y la nota es igual o menor a 8 se da esta condicion que es notable esta condicional esta utilizando el operador lógico AND representado &&
-            System.out.println("el alumno ha obtenido entre 7 y 8 = notable"); //Impresion de la condicional anterior que expresa que el resultado es notable
-        }else { // Condicional que se da al no cumplirse las condicionales else if y if y que sin poner nada esta expresando eso que si no se cumplen las condiciones anteriores el alumno ha obtenido una nota de entre 9 y 10 y es sobresaliente
-            System.out.println("el alumno ha obtenido entre 9 y 10 = sobresaliente"); //Impresion de la condional anterior que expresa que el resultado es sobresaliente
-        
-        
+            
+    switch (nota){ //Condicional que busca a que variable darle valor en caso de que ponga el usuario por ejemplo caso 0 valor 0 
+        case 0: //valor de 0
+        case 1: //valor de 1
+        case 2: //valor de 2
+        case 3: 
+        case 4:
+            System.out.println("tu nota es suspenso");
+            break;
+        case 5:
+        case 6:
+            System.out.println("tu nota es bien");
+            break;
+        case 7:
+        case 8:
+            System.out.println("tu nota es notable");
+            break;
+        case 9:
+        case 10:
+            System.out.println("tu nota es sobresaliente");           
+            break;
+        default:
+            System.out.println("Este numero es invalido");
+        } 
+           
     }
-            
-            }
-    
 }

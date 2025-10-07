@@ -10,7 +10,7 @@ import java.util.Scanner; //Se hace la importación de los datos escaner que no 
  * @author Ángel 
  * @since 5/10/2025
  */
-public class Ejercicio24 {
+public class ejercicio24notamedia {
 
     /**
      * @param args the command line arguments

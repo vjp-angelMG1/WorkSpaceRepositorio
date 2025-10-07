@@ -5,7 +5,7 @@
 package ejercicio32;
 //
 
-import java.util.Scanner; //darle importación la carpeta java util desde scanner
+import java.util.Scanner; //importación  de la libreria java util desde scanner
 
 /**
  *
@@ -15,14 +15,16 @@ import java.util.Scanner; //darle importación la carpeta java util desde scanne
 public class Ejercicio32 { //Nombre del ejercicio
 
     /**
+     * @author Ángel // Etiqueta del nombre 
+     * @since 07/10/2025
      * @param args the command line arguments
      */
     public static void main(String[] args) { //método main
-        Scanner entrada = new Scanner(System.in); //Entrada del scanner nueva para darle valor al objeto
         
         int dinero;   //dinero total //Variable
         int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   Variable que muestra en lo que se van a dividir los billetes y las monedas //Variable
-             System.out.println("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
+            Scanner entrada = new Scanner(System.in); //Entrada del scanner nueva para darle valor al objeto 
+        System.out.println("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
             dinero = entrada.nextInt(); //valor que le voy a dar de entrada al dinero
         
 
@@ -40,13 +42,13 @@ public class Ejercicio32 { //Nombre del ejercicio
       
 
         // Muestra los resultados atraves de la impresión de los diferentes billetes y monedas 
-        System.out.println("Desglose del importe: " + dinero + " euros");
-        System.out.println("Billetes de 50 euros: " + billetes50);
-        System.out.println("Billetes de 20 euros: " + billetes20);
-        System.out.println("Billetes de 10 euros: " + billetes10);
-        System.out.println("Billetes de 5 euros: " + billetes5);
-        System.out.println("Monedas de 2 euros: " + monedas2);
-        System.out.println("Monedas de 1 euro: " + monedas1);
+        System.out.println("Desglose del importe: " + dinero + " euros"); //Imprimir el desglose del importe
+        System.out.println("Billetes de 50 euros: " + billetes50); //Imprimir el resultado de los billetes de 50 euros
+        System.out.println("Billetes de 20 euros: " + billetes20); //Imprimir el resultado de los billetes de 20 euros
+        System.out.println("Billetes de 10 euros: " + billetes10); //Imprimir el resultado de los billetes de 10 euros
+        System.out.println("Billetes de 5 euros: " + billetes5); //Imprimir el resultado de los billetes de 5 euros 
+        System.out.println("Monedas de 2 euros: " + monedas2); //Imprimir el resultado de las monedas de 2 euros
+        System.out.println("Monedas de 1 euro: " + monedas1); //Imprimir el resultado de las monedas de 1 euro
     }
     
 }

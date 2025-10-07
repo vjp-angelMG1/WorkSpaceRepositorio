@@ -4,7 +4,7 @@
  */
 package ejericicio26;
 
-import java.util.Scanner; //darle importación java util desde la carpeta Scanner
+import java.util.Scanner; // importación de libreria java util desde la carpeta Scanner
 /**
  *
  * @author Ángel //Etiqueta de nombre
