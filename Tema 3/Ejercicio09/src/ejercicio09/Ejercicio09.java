@@ -19,33 +19,65 @@ public class Ejercicio09 {
         
         int numero1,numero2,numero3,numero4,numerotemporal; //Declaramos la variable 
         
-        System.out.println("Introduce 4 números ");
+        System.out.println("Introduce 4 números "); //Impresion de los cuatro numeros
         
-        numero1 = entrada.nextInt();
-        numero2 = entrada.nextInt();
-        numero3 = entrada.nextInt();
-        numero4 = entrada.nextInt();
-        
-        if(numero1>numero2){
-            numerotemporal=numero1;
+        numero1 = entrada.nextInt(); //entrada numero1 dandole valor
+        numero2 = entrada.nextInt(); //entrada numero2 dandole valor 
+        numero3 = entrada.nextInt(); //entrada numero3 dandole valor 
+        numero4 = entrada.nextInt(); //entrada numero4 dandole valor
+        //comprobamos una primera vuelta al ser el sistema burbuja 
+        if(numero1>numero2){ //Condicional que compara si el numero 1 es mayor al numero 2 es igual a las condiciones siguientes
+            numerotemporal=numero1; 
                    numero1=numero2;
                    numero2=numerotemporal;
         }else{
             System.out.println("No se cambia numero1 y numero2 ");
           }
-        if(numero2>numero3){
+        if(numero2>numero3){ //Condicional que compara si el numero 2 es mayor al numero 3 es igual a las condiciones siguientes
             numerotemporal=numero2;
                    numero2=numero3;
                    numero3=numerotemporal;
         }else{
             System.out.println("No se cambia numero2 y numero3 ");
         }
-        if(numero3>numero4){
+        if(numero3>numero4){ //Condicional que compara si el numero 3 es mayor que al numero 4 es igual a las condiciones siguientes
             numerotemporal=numero3;
                    numero3=numero4;
                    numero4=numerotemporal;
+        }else{
+            System.out.println("No se cambia numero3 y numero4 ");
         }
+                   //comparamos segunda vuelta de la burbuja
+        if(numero1>numero2){
+            numerotemporal=numero1;
+                   numero1=numero2;
+                   numero2=numerotemporal;
+        }else{
+            System.out.println("No se cambia numero1 y numero2 ");
+        }
+        
+        if(numero2>numero3) {
+            numerotemporal=numero2;
+                  numero2=numero3;
+                  numero3=numerotemporal;
+                  
+        }else{
+            System.out.println("No se cambia numero2 y numero3 ");
+        }    
+        if(numero3>numero4){
+            numerotemporal=numero3;
+            numero3=numero4;
+            numero4=numerotemporal;
+            
+        }else{
+            System.out.println("No se cambia numero3 y numero4");
+        }
+        System.out.println("Numeros ordenados de mayor a menor");//mostramos resultado final
+        System.out.println( + numero1 +"" numero2 + "" + numero3 "" + numero4 + "")
+        }
+        
+        
         
     }
     
-}
+
