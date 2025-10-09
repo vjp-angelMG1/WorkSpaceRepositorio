@@ -16,22 +16,25 @@ public class Ejercicio32 { //Nombre del ejercicio
 
     /**
      * @author Ángel // Etiqueta del nombre 
-     * @since 07/10/2025
+     * @since 07/10/2025 //Etiqueta de la fecha
      * @param args the command line arguments
      */
     public static void main(String[] args) { //método main
         
         int dinero;   //dinero total //Variable
         int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   Variable que muestra en lo que se van a dividir los billetes y las monedas //Variable
-            Scanner entrada = new Scanner(System.in); //Entrada del scanner nueva para darle valor al objeto 
-        System.out.println("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
+            
+            Scanner entrada = new Scanner(System.in); // Creo un objeto llamado entrada para capturar lo que escriba el usuario
+            
+            System.out.println("Introduce un importe en euros: "); //Se imprime el enunciado con el que vamos a dar valor al dinero
+            
             dinero = entrada.nextInt(); //valor que le voy a dar de entrada al dinero
         
 
         
            billetes50 = dinero/50; // cuantos billetes de 50 puedo sacar en total
-           billetes20 = (dinero % 50)/ 20; //cuantos billetes de 20 saco de las sobras de 50
-           billetes10 = (dinero % 20)/ 10; // cuantos billetes de 10 saco de las sobras de 20
+           billetes20 = (dinero % 50)/ 20; //cuantos billetes de 20 saco de las sobras de 50 que es el modulo del resto del calculo anterior entre 20
+           billetes10 = (dinero % 20)/ 10; // cuantos billetes de 10 saco de las sobras de 20 
            billetes5 = (dinero % 10)/ 5; // cuantos billetes de 5 saco de las sobras de 10
            monedas2 = (dinero % 5)/ 2; // cuantas monedas de 2 saco de las sobras de 5
            monedas1 = dinero % 2; //cuantas monedas de 1 saco de las sobras de 2

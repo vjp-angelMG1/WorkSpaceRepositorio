@@ -15,12 +15,14 @@ public class Ejericicio26 {
     
     public static void main(String[] args) { //método main 
         Scanner entrada =new Scanner(System.in); //Creación del objeto entrada para que se pueda leer los valores que les da el usuario
+        
         int numero; //variable declarada 
         int numero1,numero2,numero3,numero4; //variable declarada de los diferentes numeros
         
         
 
     System.out.print("Introduce un número de 4 cifras (XYZW): "); //Impresión de las cifras dadas por el usuario
+     
      numero = entrada.nextInt();  // Capturamos la entrada del usuario
      
      numero1= numero/1000; //Dandole valor al numero uno que es igual a dividirlo por 1000 ya que es un numero de cuatro cifras y lo queremos separar por orden y obtener en este caso en miles
