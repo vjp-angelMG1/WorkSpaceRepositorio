@@ -21,7 +21,7 @@ public class Ejercicio05pareimpar {
         System.out.println("Porfavor introduzca el numero");//Impresión de la entrada del numero
         numero = entrada.nextInt(); //Valor que le voy a dar al numero
         
-        if(numero%2==0){//Condicional si el resto del numero es divisible entre dos o cero es par 
+        if(numero%2==0){//Condicional si el resto del numero entre 2 es igual cero es par 
         
            System.out.println("El numero es par"); //Impresión de la condicional anterior
         }
