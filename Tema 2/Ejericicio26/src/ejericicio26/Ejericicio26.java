@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejericicio26;
+package ejericicio26; //Desarrollar un programa de cuatro cifras y que sean mostradas esas cifras que lo forman
 
 import java.util.Scanner; // importación de libreria java util desde la carpeta Scanner
 /**
- *
+ * 
  * @author Ángel //Etiqueta de nombre
  * @since 06/10/2025 //Etiqueta de fecha
  */
@@ -25,6 +25,7 @@ public class Ejericicio26 {
      
      numero = entrada.nextInt();  // Capturamos la entrada del usuario
      
+     //Incializar las variables que antes han sido declaradas
      numero1= numero/1000; //Dandole valor al numero uno que es igual a dividirlo por 1000 ya que es un numero de cuatro cifras y lo queremos separar por orden y obtener en este caso en miles
      numero2= (numero/100)%10;//Dandole valor al segundo numero lo calculamos dividiendolo entre 100 y con el modulo es decir el reto de 10 calculamos las centenas
      numero3= (numero/10)%10;//Dandole valor al tercer numero lo calculamos diviendolo entre 10 y con el modulo es decir el resto de 10 calculamos las decenas

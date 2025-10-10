@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejercicio32;
+package ejercicio32;//Desarrollar un programa que dado el importe nos reparta de manera óptima los billetes y  la cantidad sobrante en monedas
 //
 
 import java.util.Scanner; //importación  de la libreria java util desde scanner
 
 /**
  *
- * @author Ángel     // Etiqueta de descripción de el autor que lo hizo
+ * @author Ángel     // Etiqueta de descripción de el autor 
  * @since 06/10/2025 // Etiqueta de descripción de la fecha en la que se realizo 
  */
 public class Ejercicio32 { //Nombre del ejercicio
@@ -21,8 +21,8 @@ public class Ejercicio32 { //Nombre del ejercicio
      */
     public static void main(String[] args) { //método main
         
-        int dinero;   //dinero total //Variable
-        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   Variable que muestra en lo que se van a dividir los billetes y las monedas //Variable
+        int dinero;   //dinero total //Variable Declarada
+        int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   Variable Declarada que muestra en lo que se van a dividir los billetes y las monedas 
             
             Scanner entrada = new Scanner(System.in); // Creo un objeto llamado entrada para capturar lo que escriba el usuario
             
@@ -31,7 +31,7 @@ public class Ejercicio32 { //Nombre del ejercicio
             dinero = entrada.nextInt(); //valor que le voy a dar de entrada al dinero
         
 
-        
+           // Inicializar las variables que antes han sido declaradas
            billetes50 = dinero/50; // cuantos billetes de 50 puedo sacar en total
            billetes20 = (dinero % 50)/ 20; //cuantos billetes de 20 saco de las sobras de 50 que es el modulo del resto del calculo anterior entre 20
            billetes10 = (dinero % 20)/ 10; // cuantos billetes de 10 saco de las sobras de 20 
@@ -52,6 +52,9 @@ public class Ejercicio32 { //Nombre del ejercicio
         System.out.println("Billetes de 5 euros: " + billetes5); //Imprimir el resultado de los billetes de 5 euros 
         System.out.println("Monedas de 2 euros: " + monedas2); //Imprimir el resultado de las monedas de 2 euros
         System.out.println("Monedas de 1 euro: " + monedas1); //Imprimir el resultado de las monedas de 1 euro
+                         
+        // finalmente se comprueda si la compilación es correcta ejecutandola y compilandola el boton Run Project
+
     }
     
 }
