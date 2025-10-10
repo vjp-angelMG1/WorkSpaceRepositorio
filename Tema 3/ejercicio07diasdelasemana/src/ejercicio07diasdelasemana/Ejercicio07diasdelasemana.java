@@ -22,7 +22,7 @@ public class Ejercicio07diasdelasemana { //Nombre del ejercicio
         
         System.out.println("lunes(1),martes(2),miercoles(3),jueves(4),viernes(5),sabado(6) y domingo(7)"); //Impresión con los dias de la semana asignados a un case
         diasemana=entrada.nextInt(); //Recoje el número de la variable
-        
+        laborable = true;
         
         switch(diasemana){ // Condicional que busca a que variable darle valor a los case del 1 al 5
             case 1: //valor de 1 que seria el lunes
@@ -31,17 +31,18 @@ public class Ejercicio07diasdelasemana { //Nombre del ejercicio
             case 4: //valor de 4 que seria el jueves
             case 5: //valor de 5 que sería el viernes
                 laborable=true; //inicialización de la variable declarada arriva que es un boolean al ser true o false
-                System.out.println("dia laborable"); //Impresión de la varaible si se cumple la condicional
                 break; //Se utiliza para terminar la ejecución del ciclo y continuan con las siguientes instrucciones
             case 6: //valor de 6 que seria el sabado
             case 7: //valor de 7 que seria el domingo
                 laborable=false; //Inicialización de la variable declarada arriva que es un boolean al ser true o false
-                System.out.println("fin de semana"); //Impresión de la variable si se cumple la condicional
-                break; //Se utiliza para terminar la ejecución del ciclo y continuan con las siguientes instrucciones
-            default: //Condicional que se da, si el valor esta fuera del rango
-                System.out.println("dia no válido"); //Impresión al estar fuera de rango la nota le da un valor inválido
-        }
-        // TODO code application logic here
+                }
+            if (laborable == true) {
+                  System.out.println("dia laborable"); //Impresión de la varaible si se cumple la condicional
+            } else {
+                  System.out.println("fin de semana"); //Impresión de la variable si se cumple la condicional
+
+        
+        
     }
     
 }
