@@ -36,11 +36,11 @@ public class Ejercicio07diasdelasemana { //Nombre del ejercicio
             case 7: //valor de 7 que seria el domingo
                 laborable=false; //Inicialización de la variable declarada arriva que es un boolean al ser true o false
                 }
-            if (laborable == true) {
+            if (laborable == true) { //Condicional si laborable es igual a verdadero
                   System.out.println("dia laborable"); //Impresión de la varaible si se cumple la condicional
             } else {
                   System.out.println("fin de semana"); //Impresión de la variable si se cumple la condicional
-
+            }
         
         
     }
