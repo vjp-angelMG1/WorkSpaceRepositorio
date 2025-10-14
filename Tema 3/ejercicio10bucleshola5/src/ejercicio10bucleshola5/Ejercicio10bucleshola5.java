@@ -16,7 +16,6 @@ public class Ejercicio10bucleshola5 {
      */
     public static void main(String[] args) { //método main
         
-        int resultado; //Declaro la variable resultado
         int i; //Declaro la variable i para utilizarla en el bloque for
         for (i=1; i<=5; i++){ //Desde i=0 y mientras 1 sea menor o igual que 5 sumale 1 a i.
             
