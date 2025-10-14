@@ -15,15 +15,15 @@ public class Ejercicio12bucleparentrenumeros {
      */
     public static void main(String[] args) { //método main
         
-        int numero = 11; //Declaro variable empezando en 12 el primer numero par despues del 11
+        int i = 11; //Declaro variable empezando en 12 el primer numero par despues del 11
        
         
         do{ //Bucle 
-            if (numero % 2 == 0) { //si el resto de la division de numero 2 entre 2 es igual 2 o 0 se cumple la condicional por lo que se repite el bucle
-                System.out.println(numero);
+            if (i % 2 == 0) { //condicional si el resto de la division de numero 2 entre 2 es igual 2 o 0 se cumple la condicional por lo que se repite el bucle
+                System.out.println(i);
             }
-            numero++; //Incrementar el numero 1
-        }while (numero <=133); // mientras que sea el numero menor o igual a 133 para obtener los numeros pares del 11 a el 133
+            i++; //Incrementar el numero 1
+        }while (i <=133); // mientras que sea el numero menor o igual a 133 para obtener los numeros pares del 11 a el 133
         
         
         

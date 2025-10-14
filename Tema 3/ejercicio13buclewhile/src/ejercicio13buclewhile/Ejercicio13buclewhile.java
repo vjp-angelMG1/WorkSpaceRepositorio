@@ -21,10 +21,10 @@ public class Ejercicio13buclewhile {
         System.out.println("Números pares entre 11 y 133:"); //Imprime la entrada del texto
         
         while (numero <= 133) { //bucle while si el número es menor o igual que 133
-           if (numero % 2 == 0) //Utilizo un condicional para verifica si es par            
+           if (numero % 2 == 0){ //Utilizo un condicional para verifica si es par            
                System.out.println(numero); // Imprime el numero par
-         
-            numero ++; // Aumenta el numero de 1 en 1
+           }
+            numero++; // Aumenta el numero de 1 en 1
       }
     }
 }

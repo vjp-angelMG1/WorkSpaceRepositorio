@@ -16,15 +16,19 @@ public class Ejercicio14bucleparhasta100 {
      */
     public static void main(String[] args) {
         
-         int numero = 12; //Declaro variable empezando en 12 el primer numero par despues del 11
+         int numero = 0; //Declaro variable empezando en 12 el primer numero par despues del 11
+         int numero2 = numero; 
          System.out.println("Numeros pares hasta el 100: " );
         
         do{ //Bucle 
             if (numero % 2 == 0) { //si el resto de la division de numero 2 entre 2 es igual 2 o 0 se cumple la condicional por lo que se repite el bucle
                 System.out.println(numero);
+                numero2++;
                }
             numero++; //Incrementar el numero 1
-        }while (numero <=100); // mientras que sea el numero menor o igual a 133 para obtener los numeros pares del 11 a el 133
+           
+        }while (numero2 < 100); // mientras que sea el numero menor o igual a 133 para obtener los numeros pares del 11 a el 133
+               System.out.println("numero de vueltas : " +numero2);
     }
     
 }
