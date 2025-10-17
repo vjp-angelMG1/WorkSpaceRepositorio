@@ -21,7 +21,7 @@ public class Ejericicio26 {
         
         
 
-    System.out.print("Introduce un número de 4 cifras (XYZW): "); //Impresión de las cifras dadas por el usuario
+    System.out.println("Introduce un número de 4 cifras (XYZW): "); //Impresión de las cifras dadas por el usuario
      
      numero = entrada.nextInt();  // Capturamos la entrada del usuario
      
