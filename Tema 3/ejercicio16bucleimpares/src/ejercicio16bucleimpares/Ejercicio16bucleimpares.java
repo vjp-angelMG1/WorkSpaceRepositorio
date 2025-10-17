@@ -6,7 +6,8 @@ package ejercicio16bucleimpares;
 
 /**
  *
- * @author alumno
+ * @author Ángel
+ * @since 17/10/2025
  */
 public class Ejercicio16bucleimpares {
 
@@ -17,7 +18,7 @@ public class Ejercicio16bucleimpares {
           int i = 0; //Declaro variable empezando en 12 el primer numero par despues del 11
           int j = i;
           
-         System.out.println("Numeros impares entre 21 y 160: " );
+         System.out.println("Numeros impares entre 21 y 160: " ); //imprimir los numeros que son impares entre 21 y 160
         
         do{ //Bucle 
             if (i>20 && i % 2 == 1) { //si el resto de la division de numero 2 entre 2 es igual 2 o 1 se cumple la condicional por lo que se repite el bucle
