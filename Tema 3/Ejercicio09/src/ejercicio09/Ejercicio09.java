@@ -6,14 +6,15 @@ package ejercicio09;
 import java.util.Scanner;
 /**
  *
- * @author USUARIO
+ * @author Ángel //Etiqueta nombre  
+ * @since 18/10/2025 //Etiqueta fecha
  */
 public class Ejercicio09 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Método main
         
         Scanner entrada = new Scanner(System.in);//Creo un objeto llamado entrada para capturar lo que escriba el usuario
         

@@ -11,8 +11,8 @@ import java.util.Scanner; //importación a java util desde la carperta scanner
  */
 public class Ejercicio06 { //numero del ejercicio
 
-    /**@autor Ángel
-     * @since 06/10/2025
+    /**
+     * 
      
      * @param args the command line arguments
      */
@@ -24,8 +24,6 @@ public class Ejercicio06 { //numero del ejercicio
         System.out.println("Escribe tu nota entre 0 y 10"); //Impresion de la condicional principal esta ENTRE 0 y 10
         nota=entrada.nextInt(); //Recoje el numero de la variable
        
-      
-            
             
     switch (nota){ //Condicional que busca a que variable darle valor en caso de que ponga el usuario por ejemplo caso 0 valor 0 
         case 0: //valor de 0

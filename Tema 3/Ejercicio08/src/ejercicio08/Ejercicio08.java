@@ -6,7 +6,8 @@ package ejercicio08;
 import java.util.Scanner; //darle importación a java util desde la carpeta Scanner
 /**
  *
- * @author USUARIO
+ * @author Ángel //Etiqueta nombre 
+ * @since 06/10/2025 //Etiqueta fecha
  */
 public class Ejercicio08 {
 
@@ -14,7 +15,7 @@ public class Ejercicio08 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Scanner entrada = new Scanner(System.in); //Entea del scanner nueva para darle valor al objeto
+      Scanner entrada = new Scanner(System.in); //Entrada del scanner nueva para darle valor al objeto
         
         int dinero;   //dinero total //Variable
         int billetes50,billetes20,billetes10,billetes5,monedas2,monedas1; //   VAriable que muestra en lo que se van a dividir los billetes y las monedas //Variable
