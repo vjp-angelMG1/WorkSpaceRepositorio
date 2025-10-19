@@ -17,12 +17,12 @@ public class Ejercicio07diasdelasemana { //Nombre del ejercicio
     public static void main(String[] args) { //Método main
         
         int diasemana; //Declaro la variable semana
-        boolean laborable; //Declaro la variable laborable
+        boolean laborable; //Declaro la variable laborable 
         Scanner entrada = new Scanner(System.in); //Creo un objeto llamado entrada para capturar lo que escriba el usuario
         
         System.out.println("lunes(1),martes(2),miercoles(3),jueves(4),viernes(5),sabado(6) y domingo(7)"); //Impresión con los dias de la semana asignados a un case
         diasemana=entrada.nextInt(); //Recoje el número de la variable
-        laborable = true;
+        laborable = true; //inicializo la variable que es boolean solo puede ser true o false
         
         switch(diasemana){ // Condicional que busca a que variable darle valor a los case del 1 al 5
             case 1: //valor de 1 que seria el lunes
