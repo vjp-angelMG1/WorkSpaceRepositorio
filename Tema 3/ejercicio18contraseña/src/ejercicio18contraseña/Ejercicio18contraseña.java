@@ -14,17 +14,17 @@ public class Ejercicio18contraseña {
     /**
      * @param args the command line arguments
      */
-    final static int clave = 1234; //Variable constante su valor no se modifica
+    
     
     public static void main(String[] args) { //método main
         
         Scanner Entrada= new Scanner(System.in); //Creo un objeto llamado entrada para capturar lo que escriba el usuario
-        
+        final int clave; //Declaro variables
         int usuario; //Declaro variables
         int intentos;//Declaro variables
         int maximointentos;//Declaro variables
         
-        
+        clave=1234; //Inicializo variable dandole valor a clave
         intentos = 0; //Inicializo variables dándoles valor
         maximointentos = 3;
         do{ //Comienzo el bucle 

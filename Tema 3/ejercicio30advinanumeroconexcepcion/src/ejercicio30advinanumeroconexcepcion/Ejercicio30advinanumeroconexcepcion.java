@@ -35,9 +35,10 @@ public class Ejercicio30advinanumeroconexcepcion {
                  System.out.println("Introduce el numero"); //Imprime o muestra un mensaje para que se introduzca el numero
                  numero = entrada.nextInt(); //recojo el valor de la variable que me pide y lo guardo 
                  intentos++;
-            } catch (InputMismatchException e){
-                System.out.println("Error debes introducir un numero");
-                intentos++;
+            } catch (InputMismatchException e ){
+                entrada.next(); //Frena el bucle para que la entrada de la letra no lo repita y se limpie 
+                System.out.println("Error debes introducir un numero"); // imprime el valor de la entrada del número
+                intentos++; //Incrementa el valor a uno los intentos
             }
             
           if(numero < numerosecreto) { //Condicional if si el numero es menor que el numero secreto

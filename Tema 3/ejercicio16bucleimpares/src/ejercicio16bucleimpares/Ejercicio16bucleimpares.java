@@ -16,14 +16,14 @@ public class Ejercicio16bucleimpares {
      */
     public static void main(String[] args) {
           int i = 0; //Declaro variable i
-          int j = i; //Declaro variable j
+          int contador = i; //Declaro variable j
           
          System.out.println("Numeros impares entre 21 y 160: " ); //imprimir los numeros que son impares entre 21 y 160
         
         do{ //Bucle 
             if (i>20 && i % 2 == 1) { //si el resto de la division de i entre 2 es igual 2 o 1 se cumple la condicional por lo que se repite el bucle
                     System.out.print(i+ " - "); //imprimo el valor del numero
-                     j++;//incremento en 1 el valor del j contando apartir de 20
+                     contador++;//incremento en 1 el valor del contador contando apartir de 20
                }
                i++; //Incrementar i para contar los numeros desde 0 da 20 vueltas al bucle
            
