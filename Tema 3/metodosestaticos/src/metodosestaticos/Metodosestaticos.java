@@ -57,6 +57,8 @@ public class Metodosestaticos {
         // Llamamos a métodos estático de otra  clase
         System.out.println(Calculadora.suma(num1,num2));
         System.out.println(Calculadora.resta(num1, num2));
+        System.out.println(Calculadora.multiplicacion(num1, num2));
+        System.out.println(Calculadora.division(num1, num2));
         
         // Llamamos a un método estático de una clase de otro paquete
         // (debemos importar el paquete)

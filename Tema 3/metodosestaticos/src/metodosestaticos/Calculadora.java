@@ -29,5 +29,23 @@ package metodosestaticos;
     public static int resta(int num1, int num2) {
         return num1 - num2;
     }
+    /**
+     * Método que multiplica dos números pasados por parámetro
+     * @param num1
+     * @param num2
+     * @return la muriplicación de los dos numeros
+     */
+    public static int multiplicacion(int num1, int num2) {
+        return num1 * num2;
+    }
+    /**
+     * Método que divide dos números pasados por parámetro
+     * @param num1
+     * @param num2
+     * @return la división de los dos numeros
+     */
+    public static int division(int num1, int num2) {
+        return num1 / num2;    
+    }
 }
             
