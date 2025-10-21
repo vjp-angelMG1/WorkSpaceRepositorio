@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package metodosestaticos;
-
+import Utilidades.Utilidades;
 /**
  *
  * @author alumno
@@ -26,7 +26,7 @@ public class Metodosestaticos {
     
     //Método que devuelve la suma de dos números que recibe por parámetros -> tipo int
     public static int sumaQueDevuelveElResultado(int num1, int num2) {
-       int resultado = num1 +num2;          //return = num1 + num2
+       int resultado = num1 + num2;          //return = num1 + num2
        return resultado;
     }
     
@@ -56,7 +56,11 @@ public class Metodosestaticos {
         
         // Llamamos a métodos estático de otra  clase
         System.out.println(Calculadora.suma(num1,num2));
+        System.out.println(Calculadora.resta(num1, num2));
         
+        // Llamamos a un método estático de una clase de otro paquete
+        // (debemos importar el paquete)
+        Utilidades.pedirNumero();
        
     }
     
