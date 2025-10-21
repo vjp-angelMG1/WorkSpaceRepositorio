@@ -6,7 +6,8 @@ package ejercicio21divisionconexcepcion;
 import java.util.Scanner; //Importación de la libreria java util desde scanner
 /**
  *
- * @author USUARIO
+ * @author Ángel
+ * @since 19/10/2025
  */
 public class Ejercicio21divisionconexcepcion {
 

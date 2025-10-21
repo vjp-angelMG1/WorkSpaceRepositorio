@@ -7,7 +7,8 @@ import java.util.Scanner; //importación de la libreria java util desde Scanner
 import java.util.InputMismatchException; //importacion de la libreria java util desde InputMismatchExcepction
 /**
  *
- * @author USUARIO
+ * @author Ángel
+ * @since 21/10/2025
  */
 public class Ejercicio22sumaconexcepcion {
 
@@ -27,6 +28,7 @@ public class Ejercicio22sumaconexcepcion {
             System.out.println("resultado es igual : " +(numero1+numero2)); //imprimo y realizo la operacion dentro del sout entre parentesis siempre las operaciones
         } catch (InputMismatchException e){ //Continuo dentro del control de excepcion al darse entrada de una de las dos variables con una letra o texto cuando me pedian numero es decir de manero incorrecta
             System.out.println("Has introducido un valor inválido"); //Imprimo el error producido al introducir letra o texto en una de las entradas de las variables mostrandome la excepción
+            System.out.println(e);
         }   
     }
     

@@ -35,7 +35,7 @@ public class Ejercicio29adivinarnumero {
             
             if(numero < numerosecreto) { //Condicional if si el numero es menor que el numero secreto
                 System.out.println("El numero es mayor"); //imprimo que el numero es mayor
-            } else if (numero > numerosecreto)  { //Condicional else if si numero es mayor que el numero secreto
+            } else { //Condicional else if si numero es mayor que el numero secreto
                 System.out.println("El numero es menor"); //imprimo que el numero sea menor
                 
             }

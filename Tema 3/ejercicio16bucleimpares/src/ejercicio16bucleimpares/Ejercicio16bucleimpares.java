@@ -16,7 +16,7 @@ public class Ejercicio16bucleimpares {
      */
     public static void main(String[] args) {
           int i = 0; //Declaro variable i
-          int contador = i; //Declaro variable j
+          int contador = i; //Declaro variable contador
           
          System.out.println("Numeros impares entre 21 y 160: " ); //imprimir los numeros que son impares entre 21 y 160
         
