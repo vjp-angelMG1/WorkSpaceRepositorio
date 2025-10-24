@@ -4,6 +4,7 @@
  */
 package metodosestaticos;
 import Utilidades.Utilidades;
+
 /**
  *
  * @author alumno
@@ -40,7 +41,7 @@ public class Metodosestaticos {
     public static void main(String[] args) {
         int num1;
         int num2;
-        int resultado;
+        double resultado;
         num1=6;
         num2=3;
         //Llamamos a los métodos para que se ejecuten al lanzar el programa.
@@ -62,8 +63,34 @@ public class Metodosestaticos {
         
         // Llamamos a un método estático de una clase de otro paquete
         // (debemos importar el paquete)
-        Utilidades.pedirNumero();
+       // Utilidades.pedirNumero();
+        
+        //Creamos una calculadora
+        //1 Pedimos 2 números
+        num1 = Utilidades.pedirNumero();
+        num2 = Utilidades.pedirNumero();
+        
+        System.out.println(num1 + " - " + num2);
        
-    }
+        //2. Llamamos a los métodos
+        //guardamos el resultado en una variable
+        // y mostramos dicha variable
+        resultado = Calculadora.suma(num1, num2);
+        System.out.println(num1 + " + " + num2 + " = " + resultado);
+       
+        resultado = Calculadora.resta(num1, num2);
+        System.out.println( num1 + " - " + num2 + " = " + resultado);
+        
+        resultado = Calculadora.multiplicacion(num1, num2);
+        System.out.println( num1 + " * " + num2 + " = " + resultado);
+        
+        resultado = Calculadora.division(num1, num2);
+        System.out.println( num1 + " / " + num2 + " = " + resultado);
+        
+        resultado = Calculadora.raizCuadrada(num1);
+        System.out.println(" La raiz cuadrada de "+ num1 +"es"+ resultado);
+        
+        
+        
     
 }

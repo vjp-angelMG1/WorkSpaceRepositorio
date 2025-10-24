@@ -16,5 +16,6 @@ public class Utilidades {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Escribe un número: ");
         return entrada.nextInt();
+          
     }
 }

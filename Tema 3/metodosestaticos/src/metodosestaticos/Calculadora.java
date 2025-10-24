@@ -17,7 +17,8 @@ package metodosestaticos;
      * @return la suma de los dos números
      */
     public static int suma(int num1, int num2) {
-        return num1 + num2;
+        int resultado = num1 + num2;
+        return resultado;
     }
     
     /**
@@ -45,7 +46,17 @@ package metodosestaticos;
      * @return la división de los dos numeros
      */
     public static int division(int num1, int num2) {
-        return num1 / num2;    
+        return num1 / num2;         
+    }
+    /**
+     * Método que calcula la raiz cuadradoça
+     * del número pasado por paáametro
+     * 
+     * @param num1
+     * @return la raíz cuadrada
+     */
+    public static double raizCuadrada(int num1) {
+        return Math.sqrt(num1);
     }
 }
             
