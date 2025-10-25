@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author d3stroya
+ * 
  */
 public class Utilidades {
     // Método que pide un número al usuario

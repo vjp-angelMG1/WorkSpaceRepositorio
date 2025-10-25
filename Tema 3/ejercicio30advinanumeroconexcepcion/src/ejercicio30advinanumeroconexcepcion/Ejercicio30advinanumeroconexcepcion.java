@@ -44,13 +44,13 @@ public class Ejercicio30advinanumeroconexcepcion {
                 System.out.println("Error debes introducir un numero"); // imprime el valor de la entrada del número
                 System.out.println(e);
                 entrada.nextLine(); //Frena el bucle para que la entrada de la letra no lo repita y se limpie 
-        }
+                }
              intentos++; //incremento de los intentos que se han ido realizando
         } while (intento != numero); //repite el bucle mientras la condicion no sea verdadera es decir no se haya adivinado el numero
         if (intento==numero){ //Condicional que se cumple si el numero se acierta
            System.out.println("Enhorabuena has acertado el numero " + intentos + " intentos "); //Imprime el resultado del bucle en el que felicita al ser encontrado el numero y en que determinados intentos se ha logrado
         }
         
-        }
+    }
     
 }
