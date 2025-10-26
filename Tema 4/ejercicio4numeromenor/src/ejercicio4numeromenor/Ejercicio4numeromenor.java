@@ -29,7 +29,7 @@ public static void main(String[] args) {
         numero3 = entrada.nextInt(); // Guardamos el valor del tercer numero
         
         int menor; //Declaro la variable 
-        menor = comparacion.comparacionNumero(numero1, numero2, numero3); //declaro la variable con la llamada al metodo comparacionNumero para que me devuelva el valor guardado en la variable menor
+        menor = comparacion.comparacionNumero(numero1, numero2, numero3); //Inicializo la variable con la llamada al metodo comparacionNumero para que me devuelva el valor guardado en la variable menor
     }
     
 }
