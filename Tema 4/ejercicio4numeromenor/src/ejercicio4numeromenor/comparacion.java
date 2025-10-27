@@ -17,10 +17,10 @@ public class comparacion {
             System.out.println("El  menor es " + numero1); // Imprimos que el 1 es el menor si se cumple la condicion
         } else if (numero2 <= numero1 && numero2 <= numero3) { // Condicional en la que comparamos los numeros: el 2 con el y el 2 con el 3
             menor = numero2; //si es mayor el numero 2 a los demas el menor es el segundo 
-            System.out.println("El mayor es: " + numero2); // Imprimimos que el 2 es el menor en el caso de que se cumpla 
+            System.out.println("El menor es: " + numero2); // Imprimimos que el 2 es el menor en el caso de que se cumpla 
         } else { //Condicional en la que comparamos la condicion que falta que es que el numero3 sea menor que numero 2 y numero 1
             menor = numero3; //si es menor el numero 3 a los demas el mayor es el tercero
-            System.out.println("El mayor es: " + numero3); // Si no se cumple ninguna de las condiciones anteriores será el tercer número el menor de todos
+            System.out.println("El menor es: " + numero3); // Si no se cumple ninguna de las condiciones anteriores será el tercer número el menor de todos
         }
         return menor; //devuelve el valor al numero al ser nombrado por el metodo main
     

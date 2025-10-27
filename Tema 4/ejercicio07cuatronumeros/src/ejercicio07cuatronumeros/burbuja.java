@@ -18,7 +18,7 @@ public class burbuja {
    
         
         //comprobamos una primera vuelta al  el sistema burbuja 
-        System.out.println("Primera vuelta");
+        System.out.println("Primera vuelta"); 
         if(numero1>numero2){ //Condicional que compara si el numero 1 es mayor al numero 2 es igual a las condiciones siguientes
             numerotemporal=numero1; 
                    numero1=numero2;
