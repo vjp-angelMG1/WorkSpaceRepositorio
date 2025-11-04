@@ -15,7 +15,7 @@ public class cuatronumeros {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int numero1,numero2,numero3,numero4,numerotemporal; // Declaramos las variables de los 4 numeros y la auxiliar para poder intercambiarlos
+        int numero1,numero2,numero3,numero4; // Declaramos las variables de los 4 numeros y la auxiliar para poder intercambiarlos
         Scanner entrada = new Scanner (System.in); // Creo un objeto llamado scanner para capturar lo que escriba el usuario
         System.out.println("Introduce 4 numeros: "); // Imprimo la introducion de los cuatro numeros
         System.out.println("Escribe un numero"); //Imprimos que escriba un numero
