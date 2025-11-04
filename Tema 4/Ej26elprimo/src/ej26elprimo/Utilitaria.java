@@ -9,16 +9,21 @@ package ej26elprimo;
  * @author USUARIO
  */
 public class Utilitaria {
-     
-        public static boolean esPrimo(int numero) { //metodo esPrimo que recibe el valor de un numero entero y lo devuelve en booleano true o false
-            
-        if (numero <= 1) //Condicional si numero es menor o igual que 1
-            return false; //devuelve el valor al ser falso y no ser primo
-        for (int i = 2; i < numero; i++) { //Bucle para  si la variable de i es 2 y el valor de i es menor que el numero  se le incrementa uno a cada vuelta que da
-            if (numero % i == 0) //Condicional si el resto de la division del numero entre 2 es igual a 0
-            return false; // devolvemos el valor falso 
-        }
-        return true; //si no se cumple ninguna de las dos el resultado es verdadero
 
+    public static boolean esPrimo(int numero) { //metodo esPrimo que recibe el valor de un numero entero y lo devuelve en booleano true o false
+
+        int i = 2; //declaro la variable y la inicializo 
+        boolean primo = true; //declaro e inicializo la variable
+
+        while (i < numero && primo == true) { //bucle mientras la i es menor que el numero y el boolean es verdadero
+            if (numero % i == 0) { //si la division por el resto del numero es igual a 0
+                primo = false;
+
+            } else { //si no se cumple la condicion se incrementa a uno
+                i++;
+            }
+
+        }
+        return primo; //devuelve el valor del numero
     }
-}  
+}

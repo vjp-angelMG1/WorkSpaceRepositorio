@@ -12,7 +12,7 @@ public class Prioritaria {
 
     public static void main(String[] args) { //metodo main 
         int numero; //Declaro la variable
-      Scanner entrada = new Scanner(System.in); //Creo objeto llamado escaner para saber lo que me pide el usuario
+        Scanner entrada = new Scanner(System.in); //Creo objeto llamado escaner para saber lo que me pide el usuario
         System.out.println("Introduce un numero: "); //Imprimo el numero 
          numero = entrada.nextInt(); //Inicializo la variable 
       
