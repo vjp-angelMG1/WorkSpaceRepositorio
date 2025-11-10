@@ -8,70 +8,68 @@ package tema05;
  *
  * @author alumno
  */
-
-
-
-
-
-
-
 public class Bicicleta {
+
     //ATRIBUTOS
     private int ruedas;
     private String manillar;
     private String pedales;
     private String frenos;
     private boolean estaPedaleando;
-    
+
     //CONSTRUCTORES
     //Por defecto
-    public Bicicleta(){
+    public Bicicleta() {
         this.ruedas = 0;
         this.pedales = "";
         this.manillar = "";
         this.frenos = "";
         this.estaPedaleando = false;
     }
-    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean esraPedaleando) {
+
+    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando) {
         this.ruedas = ruedas;
         this.manillar = manillar;
         this.pedales = pedales;
         this.frenos = frenos;
         this.estaPedaleando = estaPedaleando;
     }
-    
-   // GETTERS Y SETTERS
-   public void  setReudas(int ruedas) {
-       this.ruedas = ruedas;
-   }
-   
-   public int getRuedas(){
-       return this.ruedas;
-   }
-   
-   public void setManillar(int manillar) {
-       this.manillar = manillar;
-   }
-   
-   public int getManillar() {
-       return this.manillar;
-   }
-   
-   public void pedales(int pedales) {
-       
-   }
-  public int 
+
+    // GETTERS Y SETTERS
+    public void setReudas(int ruedas) {
+        this.ruedas = ruedas;
+    }
+
+    public int getRuedas() {
+        return this.ruedas;
+    }
+
+    public void setManillar(String manillar) {
+        this.manillar = manillar;
+    }
+
+    public String getManillar() {
+        return this.manillar;
+    }
+
+    public void pedales(String pedales) {
+        this.pedales = pedales;
+    }
+    public String pedales() {
+        return this.pedales;
+    }
 
 
 //MÉTODOS
 
 //TO STRING
-@Override
+    
+    @Override
     public String toString() {
-        return "Mi bicleta tiene " + this.ruedas + " ruedas" +
-            ", un manillar " + this.manillar +
-            ", unos pedales " + this.pedales +
-            ", unos frenos " + this.frenos +
-            " y ahora ¿estoy pedaleando? " + this.estaPedaleando;
-}
+        return "Mi bicleta tiene " + this.ruedas + " ruedas"
+                + ", un manillar " + this.manillar
+                + ", unos pedales " + this.pedales
+                + ", unos frenos " + this.frenos
+                + " y ahora ¿estoy pedaleando? " + this.estaPedaleando;
+    }
 }
