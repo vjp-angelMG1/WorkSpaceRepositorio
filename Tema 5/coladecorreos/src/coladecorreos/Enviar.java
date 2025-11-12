@@ -11,10 +11,10 @@ package coladecorreos;
 
 public class Enviar {
     
-         public static void generarNumeroDeEnvio() {
+         public static void generarNumeroDeEnvio(int NumerodeEnvio) {
            NumerodeEnvio++;
         }
-        public static void generarNumeroDeEspera() {
+        public static void generarNumeroDeEspera(int NumerodeEspera) {
            NumerodeEspera++;
         }
         public static void generarNumeroEsperaEnvio(){
