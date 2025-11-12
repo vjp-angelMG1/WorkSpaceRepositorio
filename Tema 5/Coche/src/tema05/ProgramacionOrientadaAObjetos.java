@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author alumno
  */
-public class Programacion {
+public class ProgramacionOrientadaAObjetos {
     
     public static void main(String[] args) {
         //1. Instancio un objeto del tipo que he creado

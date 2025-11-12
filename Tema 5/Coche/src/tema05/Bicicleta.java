@@ -10,19 +10,20 @@ package tema05;
  */
 public class Bicicleta {
 
-    //ATRIBUTOS
-    private int ruedas;
-    private String manillar;
-    private String pedales;
-    private String frenos;
+    // 1. ATRIBUTOS
+    // 1.1. MODIFICADORES DE ACCESO
+    int ruedas; //friendly -> MAL
+    protected String manillar; //MAL
+    public String pedales; //MAL
+    private String frenos; //BIEN
     private boolean estaPedaleando;
 
     //Atributo estático que pertenece a la clase 
-    private static int numBicicleta=0;
+    private static int numBicicletas = 0;
     
     
-    //CONSTRUCTORES
-    //Por defecto
+    // 2. CONSTRUCTORES
+    // 2.1. Por defecto
     public Bicicleta() {
         this.ruedas = 0;
         this.pedales = "";
@@ -31,7 +32,7 @@ public class Bicicleta {
         this.estaPedaleando = false;
         
     //incrementamos el valor de número de bicicletas 
-        incrementarNumBicicleta();
+        incrementarNumBicicletas();
     }  
 
     public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando) {
@@ -41,10 +42,11 @@ public class Bicicleta {
         this.frenos = frenos;
         this.estaPedaleando = estaPedaleando;
     
-    //Incrementamos el valor del número de bicicletas
-    incrementarNumBicicleta();
+        //Incrementamos el valor del número de bicicletas
+        incrementarNumBicicletas();
     }
-    // GETTERS Y SETTERS
+    
+    // 3. GETTERS Y SETTERS
     public void setReudas(int ruedas) {
         this.ruedas = ruedas;
     }
@@ -61,17 +63,58 @@ public class Bicicleta {
         return this.manillar;
     }
 
-    public void pedales(String pedales) {
+    public void setPedales(String pedales) {
         this.pedales = pedales;
     }
-    public String pedales() {
+    public String getPedales() {
         return this.pedales;
     }
-
-
-//MÉTODOS
-
-//TO STRING
+    
+    public void setFrenos(String frenos) {
+        this.frenos = frenos;
+    }
+    public String getFrenos(){
+        return this.frenos;
+    }
+    
+    public void setEstaPedaleando(boolean estaPedaleando) {
+        this.estaPedaleando = estaPedaleando;
+    }
+    
+    public boolean getEstaPedaleando() {
+       return this.estaPedaleando; 
+    } 
+    
+    /**
+        * Método estático que devuelve
+        * el número de bicicletas instanciadas (creadas).
+        * 
+        * Es un método estático porque numBicicletas
+        * es estático.
+        * 
+        * @return el número de bicicletas creadas.
+        */
+    public static int getNumBicicletas(){
+        return numBicicletas;
+    }
+    
+    
+    //5. MÉTODOS
+    /**
+     * Método estático que incrementa en 1 
+     * el número de numBicicletas.
+     * 
+     * Es un método estático porque pertenece a la clase,
+     * no al objeto.
+     * 
+     * Como pertenece a la clase y no al objeto, 
+     * no usamos this, ya que this hace referencia al objeto.
+     */
+    private static void incrementarNumBicicletas(){
+        numBicicletas++;
+    }
+    
+    // 4. TO STRING
     
     @Override
     public String toString() {

@@ -5,7 +5,30 @@
 package tema05;
 
 /**
- *
+ * Las clases son plantillas que definen
+ * características (atributos) y comportamientos (métodos) 
+ * de algo del mundo real. Con ella podemos crear
+ * tantos objetos de ese tipo como necesitemos.
+ * 
+ * Estas clases NUNCA tienen método main.
+ * 
+ * ABSTRACCIÓN:
+ * Una de las ideas principales de la POO
+ * es la abstracción, es decir, quedarnos 
+ * solo con lo que nos interesa de ese objeto
+ * y aislarlo del resto de características.
+ * Por ejemplo, una rueda de bici tiene un diámetro, 
+ * un ancho, un tipo de cubierta, puede llevar cámara o ser
+ * tubeless, tiene un número de radios, distintos tipos de 
+ * válvula... Pero quizás solo me interese el diámetro y el 
+ * tipo de cubierta, por lo que ignoro el resto de características.
+ * 
+ * ENCAPSULACIÓN: 
+ * Los atributos siempre serán privados. De esta manera, solo 
+ * serán accesibles desde la propia clase. Otras clases podrán
+ * acceder a los atributos solo a través de los getters y setters.
+ * Esto protege el código.
+ * 
  * @author alumno
  */
 public class Coche {
