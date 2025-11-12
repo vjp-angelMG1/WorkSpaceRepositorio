@@ -17,6 +17,10 @@ public class Bicicleta {
     private String frenos;
     private boolean estaPedaleando;
 
+    //Atributo estático que pertenece a la clase 
+    private static int numBicicleta=0;
+    
+    
     //CONSTRUCTORES
     //Por defecto
     public Bicicleta() {
@@ -25,7 +29,10 @@ public class Bicicleta {
         this.manillar = "";
         this.frenos = "";
         this.estaPedaleando = false;
-    }
+        
+    //incrementamos el valor de número de bicicletas 
+        incrementarNumBicicleta();
+    }  
 
     public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando) {
         this.ruedas = ruedas;
@@ -33,8 +40,10 @@ public class Bicicleta {
         this.pedales = pedales;
         this.frenos = frenos;
         this.estaPedaleando = estaPedaleando;
+    
+    //Incrementamos el valor del número de bicicletas
+    incrementarNumBicicleta();
     }
-
     // GETTERS Y SETTERS
     public void setReudas(int ruedas) {
         this.ruedas = ruedas;
