@@ -17,10 +17,11 @@ public class Bicicleta {
     public String pedales; //MAL
     private String frenos; //BIEN
     private boolean estaPedaleando;
-
-    //Atributo estático que pertenece a la clase 
+    // 1.2. ATRIBUTO STATIC (ESTÁTICO) QUE PERTENECE A LA CLASE
     private static int numBicicletas = 0;
     
+    // 1.3. ATRIBUTO DE OTRA CLASE (Composición de clases)
+    private Ciclista ciclista;
     
     // 2. CONSTRUCTORES
     // 2.1. Por defecto
@@ -31,23 +32,30 @@ public class Bicicleta {
         this.frenos = "";
         this.estaPedaleando = false;
         
-    //incrementamos el valor de número de bicicletas 
+        // 1.2. Incrementamos el valor del atributo estatico
         incrementarNumBicicletas();
+        
+        // 1.3. ¡IMPORTANTE! Inicializamos un ciclista por defecto (con el constructor por defecto)
+        this.ciclista = new Ciclista();
     }  
-
-    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando) {
+    
+    // 2.2. Parametrizado
+    public Bicicleta(int ruedas, String manillar, String pedales, String frenos, boolean estaPedaleando, Ciclista ciclista) {
         this.ruedas = ruedas;
         this.manillar = manillar;
         this.pedales = pedales;
         this.frenos = frenos;
         this.estaPedaleando = estaPedaleando;
     
-        //Incrementamos el valor del número de bicicletas
+        // 1.2 . Incrementamos el valor del atributo estático
         incrementarNumBicicletas();
+        
+        // 1.3. Inicializamos un ciclista con los valores pasados por parámetro
+        this.ciclista = ciclista;
     }
     
     // 3. GETTERS Y SETTERS
-    public void setReudas(int ruedas) {
+    public void setRuedas(int ruedas) {
         this.ruedas = ruedas;
     }
 
@@ -85,6 +93,16 @@ public class Bicicleta {
        return this.estaPedaleando; 
     } 
     
+    // 1.3. Áñadimos el get y set de Ciclista
+    public Ciclista getCiclista() {
+        return this.ciclista;
+    }
+    
+    public void setCiclista(Ciclista ciclista) {
+        this.ciclista = ciclista;
+    }
+    
+    
     /**
         * Método estático que devuelve
         * el número de bicicletas instanciadas (creadas).
@@ -96,6 +114,9 @@ public class Bicicleta {
         */
     public static int getNumBicicletas(){
         return numBicicletas;
+        
+        //return this.numBicicletas; // MAL porque this hace referencia al objeto,
+                                     // pero numBicicletas pertenece a la clase
     }
     
     
@@ -118,10 +139,14 @@ public class Bicicleta {
     
     @Override
     public String toString() {
-        return "Mi bicleta tiene " + this.ruedas + " ruedas"
-                + ", un manillar " + this.manillar
+        return "Esta bicleta tiene " + this.ruedas + " ruedas" 
+                + ", un manillar " + this.manillar 
                 + ", unos pedales " + this.pedales
                 + ", unos frenos " + this.frenos
-                + " y ahora ¿estoy pedaleando? " + this.estaPedaleando;
+                + " y ahora ¿se está pedaleando? " + this.estaPedaleando +
+                
+                // 1.3. Imprimimos la información del ciclista
+                // (coge el mensaje de ciclista.toString()
+                this.ciclista.toString();
     }
 }

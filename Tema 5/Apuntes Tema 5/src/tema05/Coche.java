@@ -79,13 +79,15 @@ public class Coche {
            
    // 3.2. OTROS MÉTODOS
    public void acelerar() {
-       System.out.println("Acelerando el coche");
+       System.out.println("Acelerando el coche...");
    }
-   public void girar() {
-       System.out.println("Girando el coche");
-   }
+   
    public void frenar() {
-       System.out.println("Frenando el coche");
+       System.out.println("Frenando el coche...");
+   }
+   
+   public void girar() {
+       System.out.println("Girando el coche...");
    }
    //4. TO STRING: devuelve un String con los datos del objeto
    @Override
