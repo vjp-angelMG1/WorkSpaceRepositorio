@@ -7,7 +7,8 @@ package ejercicio19empleado;
 import java.util.Scanner;
 
 /**
- *
+ *  Clase que representa a un empleado, con información como su nombre,
+ * horas trabajadas, tarifa por hora y métodos para calcular su sueldo.
  * @author USUARIO
  */
 public class Empleado {
@@ -16,7 +17,7 @@ public class Empleado {
     private double horasTrabajadas;
     private double tarifaHora;
     
-    //Constructores
+    //Constructores para inicializar los atributos de los empleados
     public Empleado(String nombre, double horasTrabajadas, double tarifaHora) {
         this.nombre = nombre;
         this.horasTrabajadas = horasTrabajadas;
@@ -36,7 +37,7 @@ public class Empleado {
         return tarifaHora;
     }
     
-    //Setters
+    //Setters 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -49,14 +50,14 @@ public class Empleado {
         this.tarifaHora = tarifaHora;
     }
     
-    //Metodo para calcular el sueldo
+    //Metodo para calcular el sueldo del empleado 
     public double calcularSueldo(){
         double sueldo;
-        if (horasTrabajadas <= 40){
+        if (horasTrabajadas <= 40){ //condicional si trabaja hasta 40 horas se considera normal
             sueldo = horasTrabajadas * tarifaHora;
         }
-        else{
-            double horasHorario = 40;
+        else{ //si se trabaja mas de 40 horas las horas extras se pagan al 150%
+            double horasHorario = 40; 
             double horasExtras = horasTrabajadas - 40;
             sueldo = (horasHorario * tarifaHora) + (horasExtras * tarifaHora * 1.5);
         }
