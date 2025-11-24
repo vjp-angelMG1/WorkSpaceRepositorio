@@ -18,7 +18,7 @@ public class vehiculos {
     public vehiculos(){ 
     this.matricula="";
     this.modelo="";
-    this.potenciaCV=90;
+    this.potenciaCV= 0;
     }
 
     public vehiculos(String matricula , String modelo , int potenciaCV){
@@ -53,6 +53,6 @@ public class vehiculos {
 
     @Override
     public String toString(){
-        return "El vehículo tiene como matrícula: " +this.matricula+ " , como modelo: "+this.modelo+ " , " +this.potenciaCV+ " CV de potencia.";
+        return "El vehículo tiene como matrícula: " + matricula + " , como modelo: "+ modelo+ " , " + potenciaCV+ " CV de potencia.";
     }
 }

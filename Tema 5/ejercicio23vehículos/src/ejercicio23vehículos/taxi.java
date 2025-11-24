@@ -9,6 +9,7 @@ package ejercicio23vehículos;
  * @author USUARIO
  */
 public class taxi extends vehiculos {
+    //Atributos
         private int licencia;
    
     //Constructor por defecto
