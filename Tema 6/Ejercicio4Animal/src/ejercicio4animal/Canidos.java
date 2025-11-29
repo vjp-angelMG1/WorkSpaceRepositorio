@@ -8,16 +8,16 @@ package ejercicio4animal;
  *
  * @author alumno
  */
-    public abstract class Felinos extends Animal {
+public abstract class Canidos extends Animal {
     
     //CONSTRUCTOR
-    //por defecto
-    public Felinos(){
+    //Por defecto
+    public Canidos(){
         super();
     }
-    //parametrizado
-    public Felinos(String nombre,int edad, double peso){
-        super();
+    //Parametrizado
+    public Canidos(String nombre,int edad, double peso){
+        super(nombre,edad,peso);
     }
     //Mostrar
     @Override
@@ -27,4 +27,5 @@ package ejercicio4animal;
     
         
 }
+    
 

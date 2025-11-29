@@ -8,21 +8,23 @@ package ejercicio4animal;
  *
  * @author alumno
  */
-public abstract class Perros extends Canidos {
-    //CONSTRUCTORES
-    //por defecto
-    public Perros(){
-        super();
-    }
-    //parametrizado
-    public Perros(String nombre,int edad, double peso){
-        super();
-    }
+    public abstract class Felinos extends Animal {
     
-
+    //CONSTRUCTOR
+    //Por defecto
+    public Felinos(){
+        super();
+    }
+    //Parametrizado
+    public Felinos(String nombre,int edad, double peso){
+        super(nombre,edad,peso);
+    }
     //Mostrar
     @Override
     public String toString(){
         return super.toString();
     }
+    
+        
 }
+

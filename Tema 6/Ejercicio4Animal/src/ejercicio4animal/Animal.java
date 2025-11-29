@@ -18,13 +18,13 @@ public abstract class Animal {
        private int edad;
        private double peso;
     //CONSTRUCTORES
-    //por defecto
+    //Por defecto
     public Animal(){
     this.nombre= "";
     this.edad=0;
     this.peso=0;
     }
-    // parametrizado
+    // Parametrizado
     public Animal (String nombre,int edad,double peso){
         this.edad = edad;
         this.nombre = nombre;
@@ -47,7 +47,7 @@ public abstract class Animal {
     public  double getPeso(){
         return this.peso;
     }
-    public void setPeso(){
+    public void setPeso(double peso){
         this.peso = peso;
     }
     //MÉTODOS
@@ -55,6 +55,18 @@ public abstract class Animal {
     public abstract void alimentacion();
     public abstract void habitat();
     public abstract void nombreCientifico();
+    
+    //MÉTODO NO ABSTRACTO PARA MOSTRAR MEJOR TODO
+    public void mostrarTodo() {
+    System.out.println("Nombre: " + nombre);
+    System.out.println("Edad: " + edad + " años");
+    System.out.println("Peso: " + peso + " Kg");
+    System.out.print("Sonido: "); sonido();
+    System.out.print("Alimentación: "); alimentacion();
+    System.out.print("Hábitat: "); habitat();
+    System.out.print("Nombre científico: "); nombreCientifico();
+    System.out.println("--------------------------------------");
+    }
  
     @Override
     public String toString(){
