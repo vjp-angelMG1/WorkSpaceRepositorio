@@ -5,34 +5,36 @@
 package ejercicio4animal;
 
 /**
- *
- * @author USUARIO
+ * Clase Leones
+ * Subclase de Felinos
+ * Implementa los métodos abstractos de Animal
+ * @author Ángel
  */
 public class Leones extends Felinos {
     public Leones() {
-        super();
+        super(); // Constructor por defecto
     }
     public Leones(String nombre, int edad, int peso) {
-        super(nombre, edad, peso);
+        super(nombre, edad, peso); //Constructor parametrizado
     }
-    
+    //MÉTODOS ABSTRACTOS
     @Override
     public void sonido() {
-        System.out.println("Rugido");
+        System.out.println("Rugido"); //Sonido del León
     }
     
     @Override
     public void alimentacion() {
-        System.out.println("Carnivora.");
+        System.out.println("Carnivora."); //Alimentación del León
     }
     @Override
     public void habitat() {
-        System.out.println("Africa subsahariana.");
+        System.out.println("Africa subsahariana."); //Hábitat del León
     }
     
     @Override
     public void nombreCientifico() {
-        System.out.println("Panthera leo.");
+        System.out.println("Panthera leo."); // Nombre cientifíco
     }
      //Mostrar
     @Override

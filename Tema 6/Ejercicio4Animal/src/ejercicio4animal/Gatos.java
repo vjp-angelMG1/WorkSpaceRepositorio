@@ -5,40 +5,42 @@
 package ejercicio4animal;
 
 /**
- *
- * @author alumno
+ * Clase Gatos
+ * Subclase de Felinos
+ * Implementa los métodos abstractos de Animal
+ * @author Ángel
  */
 public class Gatos extends Felinos {
     public Gatos(){
-        super();
+        super(); //Constructor por defecto
     }
     //parametrizado
     public Gatos(String nombre,int edad, double peso){
-        super(nombre, edad,peso);
+        super(nombre, edad,peso); //Constructor parametrizado
     }
-    
+    //MÉTODOS ABSTRACTOS
     @Override
     public void sonido() {
-        System.out.println("Maullido.");
+        System.out.println("Maullido."); //Sonido del gato
     }
     
     @Override
     public void alimentacion() {
-        System.out.println("Ratones.");
+        System.out.println("Ratones."); //Alimentación del gato
     }
     
     @Override
     public void habitat() {
-        System.out.println("Domestico.");
+        System.out.println("Domestico."); //Hábitat del gato
     }
     
     @Override
     public void nombreCientifico(){
-        System.out.println("Felis catus");
+        System.out.println("Felis catus"); //Nombre científico
     }
     
     //Mostrar
-    @Override
+    @Override //muestra información basica hereda de Animal
     public String toString(){
         return super.toString();
     }

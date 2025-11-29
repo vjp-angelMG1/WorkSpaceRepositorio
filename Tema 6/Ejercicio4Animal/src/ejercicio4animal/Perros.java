@@ -5,28 +5,30 @@
 package ejercicio4animal;
 
 /**
- *
- * @author alumno
+ * Clase Perros
+ * Subclase de Canidos
+ * Implementa los métodos abstractos de Animal
+ * @author Ángel
  */
 public class Perros extends Canidos {
     //CONSTRUCTORES
     //por defecto
     public Perros(){
-        super();
+        super(); //Constructor por defecto, Llama a Canidos()
     }
     //parametrizado
     public Perros(String nombre,int edad, double peso){
-        super(nombre, edad, peso);
+        super(nombre, edad, peso); // Constructor parametrizado, Llama a Canidos()
     }
-    
+    //MÉTODOS ABSTRACTOS CON OVERRIDE
     @Override
     public void sonido() {
-        System.out.println("Ladrido.");
+        System.out.println("Ladrido."); //Sonido del perro
     }
     
     @Override
     public void alimentacion() {
-        System.out.println("Carnivora.");
+        System.out.println("Carnivora."); //Alimentación de los perros
     }
     
     @Override
@@ -36,11 +38,11 @@ public class Perros extends Canidos {
     
     @Override
     public void nombreCientifico() {
-        System.out.println("Canis lupus familiaris.");
+        System.out.println("Canis lupus familiaris."); // Nombre cinetífico
     }
 
     //Mostrar
-    @Override
+    @Override //toString hereda de Animal
     public String toString(){
         return super.toString();
     }
