@@ -8,6 +8,10 @@ package ejercicio5;
  *
  * @author alumno
  */
-public interface Oviparo {
+public interface Oviparo   {
+    public String obtenerMensajeOviparo();
+    public void ponerHuevo();
+    public void incubarHuevo();
+    public void mostrarNumHuevos();
     
 }

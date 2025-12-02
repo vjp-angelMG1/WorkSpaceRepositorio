@@ -23,9 +23,9 @@ public abstract class Animal {
     //CONSTRUCTORES
     //Por defecto // crea un Animal sin datos, con valores inciales por defecto
     public Animal(){
-    this.nombre= ""; //Inicializa el constructor por defecto con el nombre como vacío
-    this.edad=0; // Inicializa el constructor por defecto con la edad en 0
-    this.peso=0; // Inicializa el constructor por defdecto con el peso en 0
+        this.nombre= ""; //Inicializa el constructor por defecto con el nombre como vacío
+        this.edad=0; // Inicializa el constructor por defecto con la edad en 0
+        this.peso=0; // Inicializa el constructor por defdecto con el peso en 0
     }
     // Parametrizado // permite crear un animal con datos específicos
     public Animal (String nombre,int edad,double peso){

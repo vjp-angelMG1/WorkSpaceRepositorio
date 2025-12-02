@@ -10,4 +10,10 @@ package ejercicio5;
  */
 public interface Volador {
     
+    public void alturaDeVuelo();
+    public String obtenerMensajeVolador();
+    public void aumentarAlturaVuelo();
+    public void bajarAlturaVuelo();
+    public void mostrarAlturaVuelo();
+    
 }
