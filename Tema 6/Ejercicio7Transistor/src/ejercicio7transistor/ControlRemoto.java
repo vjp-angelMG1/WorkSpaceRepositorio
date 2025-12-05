@@ -8,7 +8,7 @@ package ejercicio7transistor;
  *
  * @author USUARIO
  */
-public class ControlRemoto {
+public interface ControlRemoto {
     public void encender();//Método para encender el dispositivo
     public void apagar();//Método para apagar el dispositivo
     public void subirVolumen();//Método para subir el volumen
