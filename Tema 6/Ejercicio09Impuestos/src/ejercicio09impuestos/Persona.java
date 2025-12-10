@@ -58,17 +58,22 @@ public class Persona implements Gravable {
         } else if (ingresosAnuales <= 35200) {
             impuesto = ingresosAnuales * 0.30;
         //De 35.200 € a 60.000 € un 37 €
-        } else if (ingresosAnuales <= 60000); {
+        } else if (ingresosAnuales <= 60000) {
             impuesto = ingresosAnuales * 0.37;
         //De 60.000 € a 300.000 € un 45 %
-        } else if (ingresosAnuales <= 300000); {
+        } else if (ingresosAnuales <= 300000) {
             impuesto = ingresosAnuales * 0.45;
         //Más de 300.000 € un 47 %
         } else {
             impuesto = ingresosAnuales * 0.47;
         }
         //Devolver el impuesto calculado
-        return impuesto;
+        return impuesto;   
+    }
+    //Mostrar toString cadena legible
+    @Override
+    public String toString(){
+        return "DNI: " + dni  + ", Ingresos anuales: " + ingresosAnuales + ", IRPF a pagar: " + calcularImpuesto();
     }
 }
      
