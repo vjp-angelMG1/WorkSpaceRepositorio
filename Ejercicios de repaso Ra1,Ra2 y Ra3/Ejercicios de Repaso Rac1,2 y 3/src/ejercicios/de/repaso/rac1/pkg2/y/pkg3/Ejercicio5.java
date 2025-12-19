@@ -11,7 +11,7 @@ package ejercicios.de.repaso.rac1.pkg2.y.pkg3;
 public class Ejercicio5 {
     public static void main (String[] args){
         int numero; //declaro las variables
-        numero = 12; //inicializo las variables
+        numero = 35; //inicializo las variables
         boolean esMultiplo = esMultiploDeCinco(numero);//Llama al método
         
         System.out.println("Resultado: " +esMultiplo);
