@@ -63,8 +63,9 @@ public class Television implements ControlRemoto {
     @Override
     public void apagar() {
         if (encendido) {
-            System.out.println("La TV se apagara en 10s");
             encendido = false;
+            System.out.println("La TV se apagara en 10s");
+            
         }
     }
 
@@ -87,7 +88,7 @@ public class Television implements ControlRemoto {
     @Override
     public void cambiarCanal(float canal) {
         if (encendido) {
-            this.canal = (int) canal;
+            this.canal = (int) canal; //casting cambiar de tipo
             System.out.println("Canal cambiado a: " + this.canal);
         }
     }

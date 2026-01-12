@@ -20,7 +20,7 @@ package ejercicio1operaciones;
  * • Potencia: Tiene un atributo llamado exponente. El método realizarOperacion calcula la
  * potenica de numero elevado a exponente y muestra el resultado por pantalla.
  *
- * @author KevinNS
+ * 
  */
 public abstract class Calculadora { //Esta será la superclase y es abstracta
     
