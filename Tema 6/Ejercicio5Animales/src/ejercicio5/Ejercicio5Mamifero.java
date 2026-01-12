@@ -14,7 +14,19 @@ public class Ejercicio5Mamifero {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       //Objetos que se crean en la clase (Ornitorinco y Murcielago)
+       Ornitorrinco ornitorrinco = new Ornitorrinco("Cafe", "Macho", "Negro", 5 , 2);
+       Murcielago murcielago = new Murcielago("Kela", "Hembra", "Hembra", "Negro", 3, 10);
+       
+       //Mostrar los datos del ornitorrinco y simulamos los comportamientos ovíparos
+       System.out.println("--Datos del Ornitorrico--");
+       ornitorrinco.mostrarDatos();
+       ornitorrinco.ponerHuevo();
+       ornitorrinco.incubarHuevo();
+       ornitorrinco.mostrarNumHuevos();
+       
+       
+       
     }
     
 }

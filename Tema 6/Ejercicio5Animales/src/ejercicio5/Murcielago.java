@@ -16,18 +16,18 @@ public class Murcielago extends Mamifero implements Volador {
     private double alturaDeVuelo;
     
     //CONSTRUCTORES
-    
+    //Por defecto 
     public Murcielago(){
     
         this.alturaDeVuelo = 0.0;
     
     }
-    
+    //parametrizado
     public Murcielago(String nombre,String sexo,String color, int edad, double alturaDeVuelo){
         super(nombre, sexo, color, edad);
         this.alturaDeVuelo = alturaDeVuelo;
     }
-    
+    //Getters y Setters
     public double GetalturaDeVuelo(){
         return alturaDeVuelo;
     }
@@ -51,12 +51,13 @@ public class Murcielago extends Mamifero implements Volador {
         System.out.println("La altura vuelo ha disminuido 5 metros");
     }
     
-    @Override
+   
     
-    public void 
+
+    //Método toString
     @Override
     public  String toString(){
-        return "altura de vuelo"+this.alturaDeVuelo;
+        return super.toString()+ ", Murcielago{" + "alturaVuelo=" + altura de vuelo + '}';
     }
     
     

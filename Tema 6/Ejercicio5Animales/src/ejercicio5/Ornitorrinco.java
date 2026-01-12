@@ -10,29 +10,51 @@ package ejercicio5;
  */
 public class Ornitorrinco extends Mamifero{
     //ATRIBUTO
-    private int NumeroDeHuevos;
+    private int numeroDeHuevos;
     //CONSTRUCTORES
     //por defecto
     public Ornitorrinco(){
-        this.NumeroDeHuevos = 0;
+        numeroDeHuevos = 0;
     }    
     //parametrizado
     public Ornitorrinco(String nombre, String sexo,String color, int edad){
     super();
-    this.NumeroDeHuevos = 0;
+    this.numeroDeHuevos = numeroDeHuevos;
     }
     
+   
+    
     private int GetNumeroDeHuevos(){
-        return NumeroDeHuevos;
+        return numeroDeHuevos;
     }
     
     private void SetNumeroDeHuevos(int NumeroDeHuevos){
-        this.NumeroDeHuevos = NumeroDeHuevos;
+        this.numeroDeHuevos = numeroDeHuevos;
     }
-        
+    //METODOS
+    @Override
+    public String obtenerMensajeOviparo() {
+        return "El ornitorrinco es un mamífero ovíparo";
+    }
+    
+    @Override
+    public void ponerHuevo(){
+        numeroDeHuevos++;
+    }
+    
+    @Override
+    public void incubarHuevo(){
+        numeroDeHuevos--;
+    }
+    @Override
+    public void mostrarNumHuevos(){
+        System.out.println(numeroDeHuevos);
+    }
+    
+    //TO STRING
     @Override
     public String toString(){
-        return "Numero de Huevos"+ this.NumeroDeHuevos;
+        return super.toString()+ "Numero de Huevos"+ this.numeroDeHuevos;
     }
     
    

@@ -15,15 +15,17 @@ public class Mamifero  {
     private String sexo;
     private String color;
     private int edad ;
-    
-    public Mamifero(){
     //CONSTRUCTORES
+    //por defecto
+    public Mamifero(){
+    
         this.nombre = "";
         this.sexo = "";
         this.color = "";
         this.edad = 0;
    
     }
+   //parametrizado
    public Mamifero(String nombre, String sexo, String color, int edad){
         this.nombre ="";
         this.sexo = "";
@@ -31,7 +33,7 @@ public class Mamifero  {
         this.edad = 0;
    
    }
-   
+   //Getters/Setters
    public String GetNombre(){
        return nombre;
    }
@@ -44,7 +46,7 @@ public class Mamifero  {
        return sexo;
    }
    
-   public void SetSeco(String sexo) {
+   public void SetSexo(String sexo) {
        this.sexo = sexo;
    }
    
@@ -61,7 +63,7 @@ public class Mamifero  {
    public void Setedad(){
        this.edad = edad;
    }
-   
+   //Mostrar cadena de principales caracteristicas
    @Override
    public String toString(){
        return this.nombre + "es" + this.sexo + "color"+ this.color + "edad" + this.edad; 
