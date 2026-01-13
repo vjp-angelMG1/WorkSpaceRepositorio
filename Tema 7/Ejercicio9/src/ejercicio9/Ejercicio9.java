@@ -2,40 +2,46 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejercicio8;
+package ejercicio9;
 
-import java.util.Scanner;
 import java.util.InputMismatchException;
+import java.util.Scanner;
 
 /**
  *
- * @author Angel
+ * @author Ángel
  */
-public class Ejercicio8 {
+public class Ejercicio9 {
 
     
-    //Método que pide al usuario un número de 5 cifras
+    //Método que pide un número entero mayor que 0
     public static int pedirNumeros(){
         Scanner entrada = new Scanner(System.in);
         
         int numero = 0;
-        boolean valido = false;
         
         do{
-            System.out.print("Escribe un numero de 5 cifras: ");
+            System.out.print("Escribe un numero: ");
             try{
                 numero = entrada.nextInt();
-                if(numero >= 10000 && numero <= 99999){//Comprobamos si tiene 5 cifras
-                    valido = true;
-                }else{
-                    System.out.println("Error: Debe de ser un numero de 5 cifras");
-                }
             }catch(InputMismatchException e){
                 System.out.println("Error: Debe introducir un numero entero");
                 entrada.next();
             }
-        }while(!valido);//Repetimos hasta que el número sea válido
-        return numero;//Devolvemos el número correcto
+        }while(numero<1);//Repetimos mientras el número sea menor que 1
+        return numero;//Devolvemos el número válido
+    }
+    
+    //Método que calcula cuántas cifras tiene un número
+    public static int calcularCifras(int numero){
+        int contador = 0;
+        //Mientras el número sea mayor que 0, se va dividiendo entre 10 y suma una cifra
+        while(numero>0){
+            numero /= 10;
+            contador++;
+        }
+        System.out.println("El numero tiene " + contador + " cifras");
+        return contador;//Devolvemos cuántas cifras tiene
     }
     
     //Método que divide el número en cifras y las guarda en el vector
@@ -59,11 +65,9 @@ public class Ejercicio8 {
     
     public static void main(String[] args) {
         int numero = pedirNumeros();//Pedimos un número válido al usuario
-        int[] vector = new int[5];//Array donde guardaremos las 5 cifras
+        int[] vector = new int[calcularCifras(numero)];//Array donde guardaremos las cifras que diga el usuario
         
         dividirNumeros(numero, vector);//Dividimos el número en cifras
         mostrarNumeros(vector);//Mostramos el número al revés
     }
 }
-    
-
