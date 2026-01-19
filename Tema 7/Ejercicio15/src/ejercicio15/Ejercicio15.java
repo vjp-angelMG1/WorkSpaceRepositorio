@@ -88,7 +88,6 @@ public class Ejercicio15 {
 
         } while (num != 7); // Bucle mientras sea distinto de 7
 
-        entrada.close(); // Cierro el Scanner
     }
 
     public static void rellenarArray(int array[]) {
