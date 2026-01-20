@@ -39,18 +39,18 @@ public class Ejercicio14 {
         
             switch (numero){
                 case 1:
-                    RellenarLasTemperaturas(temperaturas);
+                    rellenarLasTemperaturas(temperaturas);
                     System.out.println("Array rellenado correctamente");
                     break;
                 case 2:
-                    MostrarLasTemperaturas(temperaturas);
+                    mostrarLasTemperaturas(temperaturas);
                     break;
                 case 3:
-                    VisualizarLaTemperaturaMediaDelMes(temperaturas);
+                    visualizarLaTemperaturaMediaDelMes(temperaturas);
                     System.out.println("3-Visualizar las temperaturas media del mes");
                     break;
                 case 4:
-                    DiaDiasMasCalurosoDelMes(temperaturas);
+                    diaDiasMasCalurosoDelMes(temperaturas);
                     System.out.println("Día o Días mas calurosos del mes");
                     break;
                 case 5:
@@ -69,7 +69,7 @@ public class Ejercicio14 {
         
     } 
     
-    public static void RellenarLasTemperaturas(int temperaturas[][]){
+    public static void rellenarLasTemperaturas(int temperaturas[][]){
         int grados;
         for (int i= 0; i < temperaturas.length; i++) {
             Scanner rellenar = new Scanner(System.in);
@@ -77,18 +77,18 @@ public class Ejercicio14 {
         }   
     }
     
-    public static void MostrarLasTemperaturas(int temperaturas[][]){
+    public static void mostrarLasTemperaturas(int temperaturas[][]){
         for (int i= 0; i <temperaturas.length; i++) {
             for ( int j=0; j <temperaturas.length; j++){}
         }
     }    
-    public static void VisualizarLaTemperaturaMediaDelMes(int temperaturas [][]){
+    public static void visualizarLaTemperaturaMediaDelMes(int temperaturas [][]){
         System.out.println("La temperatura media del mes es" + : + "grados");
     }
-    public static void DiaDiasMasCalurosoDelMes(int temperaturas [][]){
+    public static void diaDiasMasCalurosoDelMes(int temperaturas [][]){
         
     }
-    }
+    
 }    
     
 
