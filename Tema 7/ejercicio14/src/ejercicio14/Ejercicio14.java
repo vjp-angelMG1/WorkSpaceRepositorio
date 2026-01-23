@@ -74,12 +74,14 @@ public class Ejercicio14 {
         for (int i= 0; i < temperaturas.length; i++) {
             Scanner rellenar = new Scanner(System.in);
             grados = rellenar.nextInt();
+            temperaturas[i][j] = temperaturas;
         }   
     }
     
     public static void mostrarLasTemperaturas(int temperaturas[][]){
         for (int i= 0; i <temperaturas.length; i++) {
             for ( int j=0; j <temperaturas.length; j++){}
+            System.out.println("Temperaturas"+ temperaturas[4][7] + i + ":");
         }
     }    
     public static void visualizarLaTemperaturaMediaDelMes(int temperaturas [][]){
