@@ -16,7 +16,7 @@ public class Ejercicio19 {
     public static void main(String[] args) {
         int[] vector = new int[100];//Crear un vector de 100 posiciones
         
-        rellenarVector(vector);
+        rellenarVector(vector); //Llamo a los métodos para mostrar el resultado del vector
         mayorValor(vector);
         menorValor(vector);
         masRepetidos(vector);
@@ -26,7 +26,7 @@ public class Ejercicio19 {
     //Metodo que rellena el vector con números aleatorios entre 10 y 80
     public static void rellenarVector(int [] vector){
         for(int i = 0; i < vector.length; i++){
-            vector[i] = (int)(Math.random() * 71) + 10;
+            vector[i] = (int)(Math.random() * 61) + 10; 
         }
     }
     
