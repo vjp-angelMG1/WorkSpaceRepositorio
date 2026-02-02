@@ -8,37 +8,51 @@ import java.util.Scanner;
 
 /**
  *
- * @author alumno
+ * @author Angel
  */
+import java.util.Scanner;
+
 public class Ejercicio1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
-        Notas[] asignaturas = new Notas[6];//creo array de objetos
+        Scanner entrada = new Scanner(System.in);
 
-        Notas programacion = new Notas("Programación", 4); //Instanciar un objeto y creo la clase
-        for (int i = 0; i < asignaturas.length; i++){
-        
+        Notas[] asignaturas = new Notas[6]; // array de objetos
+
+        // Inicializo cada objeto del array con su nombre y nota 0
+        asignaturas[0] = new Notas("Programación", 0);
+        asignaturas[1] = new Notas("Lenguajes de Marca", 0);
+        asignaturas[2] = new Notas("Bases de Datos", 0);
+        asignaturas[3] = new Notas("Entorno de Desarrollo", 0);
+        asignaturas[4] = new Notas("Sistemas Informáticos", 0);
+        asignaturas[5] = new Notas("Formación y Orientación Laboral", 0);
+
+        // Pido las notas al usuario y las guardo en cada objeto
+        for (int i = 0; i < asignaturas.length; i++) {
+            System.out.print("Introduzca la nota de " + asignaturas[i].getNombre() + ": ");
+            float nota = entrada.nextFloat();
+            asignaturas[i].setNotas(nota); // usa setNotas de tu clase
         }
 
-        asignaturas[0].setNombre("Programación");
-        asignaturas[1].setNombre("Lenguajes de Marca");
-        asignaturas[2].setNombre("Bases de Datos");
-        asignaturas[3].setNombre("Entorno de Desarrollo");
-        asignaturas[4].setNombre("Sistemas Informaticos");
-        asignaturas[5].setNombre("Formación y Orientación Laboral");
+        float media = calcularNotaMedia(asignaturas);
+        System.out.println("La nota media del curso es: " + media);
 
+        entrada.close();
     }
 
+    // Si quieres seguir usando este método, podrías integrarlo en el bucle
     public static float pedirPrecio() {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Notas: ");
+        System.out.print("Nota: ");
         return entrada.nextFloat();
     }
 
-    public static float calcularNotaMedia(){}
-    
+    public static float calcularNotaMedia(Notas[] asignaturas) {
+        float suma = 0;
+        for (int i = 0; i < asignaturas.length; i++) {
+            suma += asignaturas[i].getNotas(); // usa getNotas de tu clase
+        }
+        return suma / asignaturas.length;
+    }
 }
