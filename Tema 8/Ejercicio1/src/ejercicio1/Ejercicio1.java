@@ -39,6 +39,9 @@ public class Ejercicio1 {
         return entrada.nextFloat();
     }
 
-    public static float calcularNotaMedia(){}
+    public static float calcularNotaMedia(){
+    for (int=0; i< asigntauras.length; i++){
+    
+    }
     
 }
