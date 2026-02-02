@@ -48,6 +48,7 @@ public class Ejercicio1 {
         return entrada.nextFloat();
     }
 
+<<<<<<< HEAD
     public static float calcularNotaMedia(Notas[] asignaturas) {
         float suma = 0;
         for (int i = 0; i < asignaturas.length; i++) {
@@ -55,4 +56,11 @@ public class Ejercicio1 {
         }
         return suma / asignaturas.length;
     }
+=======
+    public static float calcularNotaMedia(){
+    for (int=0; i< asigntauras.length; i++){
+    
+    }
+    
+>>>>>>> 55edc414249f63643dec4f249bd3c5734235d7aa
 }
