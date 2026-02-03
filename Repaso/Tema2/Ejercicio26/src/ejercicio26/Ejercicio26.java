@@ -17,13 +17,21 @@ public class Ejercicio26 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+         int numeroTotal;
+        System.out.println("Por favor, introduzca un número de 4 cifras:");
+        numeroTotal = entrada.nextInt();
+            
+        int primerNumero = numeroTotal/1000;
+        int resto = numeroTotal%1000;
+        int segundoNumero = resto/100;
+        resto = resto%100;
+        int tercerNumero = resto/10;
+        int cuartoNumero = resto%10;
+        System.out.println("La primera cifra es : "+primerNumero);
+        System.out.println("La segunda cifra es : "+segundoNumero);
+        System.out.println("La tercera cifra es : "+tercerNumero);
+        System.out.println("La cuarta cifra es : "+cuartoNumero);
         
-        int cifra1;
-        int cifra2;
-        int cifra3;
-        int cifra4;
-        int resultadoCifras = cifra1-cifra2-cifra3cifra4;
-        System.out.println("Por favor, introduzca un número de 4 cifras:"resultadoCifras);
     }
     
 }
