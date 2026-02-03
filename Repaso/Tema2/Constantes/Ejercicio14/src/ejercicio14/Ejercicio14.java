@@ -13,7 +13,7 @@ public class Ejercicio14 {
     /**
      * @param args the command line arguments
      */
-    public static float NUMERO_PI=3.1416f;
+    public final static float NUMERO_PI=3.1416f;
     public static void main(String[] args) {
         float radio = 5.2f;
         System.out.println("El area de una circunferencia de radio"+radio+"es : "+NUMERO_PI*(radio*radio));

@@ -13,10 +13,11 @@ public class Ejercicio9 {
     /**
      * 
      */
-    public static double NUMERO_PI = 3.1416;
+    public static final double NUMERO_PI = 3.1416;
+    
     public static void main(String[] args) {
         float radio = 3.55f;
-        System.out.println("La longuitud de una circunferencia cuyo radio vale :"+radio+" es igual a:"+radio*radio*NUMERO_PI+" metros");
+        System.out.println("La longuitud de una circunferencia cuyo radio vale :"+radio+" es igual a:"+(radio*radio)*NUMERO_PI+" metros");
        
     }
     

@@ -15,10 +15,10 @@ public class Ejercicio15 {
      */
     public static void main(String[] args) {
         int tiempoTotalEnSegundos = 10000;
-        int tiempoEnHoras = tiempoTotalEnSegundos / 3600;
-        int tiempoRestante = tiempoTotalEnSegundos % 3600;
-        int tiempoEnMinutos = tiempoRestante / 60;
-        int tiempoEnSegundos = tiempoRestante % 60;
+        int tiempoEnHoras = tiempoTotalEnSegundos / 3600; //horas
+        int tiempoRestante = tiempoTotalEnSegundos % 3600; //segundos restantes
+        int tiempoEnMinutos = tiempoRestante / 60; //minutos
+        int tiempoEnSegundos = tiempoRestante % 60; //segundos
         System.out.println("10.000 segundos hacen un total de: " + tiempoEnHoras + " horas, " + tiempoEnMinutos + " minutos y " + tiempoEnSegundos + " segundos.");
 
     }
