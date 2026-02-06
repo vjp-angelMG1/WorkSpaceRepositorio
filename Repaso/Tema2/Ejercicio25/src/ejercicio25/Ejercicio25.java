@@ -19,9 +19,9 @@ public class Ejercicio25 {
     public static void main(String[] args) { //clase principal main
         
         Scanner entrada = new Scanner(System.in); //creo scanner para que me escane los valores que le voy a pedir al usuario
-        int numero1 = 3; //declaro e inicializo las variables 
-        int numero2 = 4;
-        int numero3 = 8;
+        int numero1; //declaro e inicializo las variables 
+        int numero2;
+        int numero3;
         int suma;
         int producto;
         System.out.println("Por favor, introduzca el primer número:"); //imprimo por pantalla
