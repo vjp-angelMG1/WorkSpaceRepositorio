@@ -63,7 +63,7 @@ public class Ejercicio9 {
            numero4 = aux;
        }
        //tercera pasada formada por tres condicionales if para ordenar los numeros de uno a uno haber cual es mayor por el método burbuja
-              if (numero1>numero2){
+        if (numero1>numero2){
            aux = numero1;
            numero1 = numero2;
            numero2 = aux;

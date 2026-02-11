@@ -24,14 +24,14 @@ public class Ejercicio2 {
         numero1 = entrada.nextInt(); //recojo el numero que le pido al usuario 
         System.out.println("Ahora introduzca otro numero"); //imprimo por pantalla
         numero2 = entrada.nextInt(); //recojo el numero que le pido al usuario
-        if(numero1>10){ //condicional si el numero es mayor que 0            
-            resultado = numero1*numero2; //operación de la multiplicación
-            System.out.println("si"+numero1+ "es mayor que 10 la operacion que se realiza es multiplicacion = " +resultado); //imprimo por pantalla la operación
-        }else if (numero1<10){ //condicional si el numero es menor que 0
-            resultado = numero1+numero2; //operación de la suma
-            System.out.println("si"+numero1+ "es menor que 10 la operacion que se realiza es suma = " +resultado); //imprimo por pantalla la operación
-        }        
-                
+        if (numero1 > 10) { //condicional si el numero es mayor que 0            
+            resultado = numero1 * numero2; //operación de la multiplicación
+            System.out.println("si" + numero1 + "es mayor que 10 la operacion que se realiza es multiplicacion = " + resultado); //imprimo por pantalla la operación
+        } else { //condicional si el numero es menor que 0
+            resultado = numero1 + numero2; //operación de la suma
+            System.out.println("si" + numero1 + "es menor que 10 la operacion que se realiza es suma = " + resultado); //imprimo por pantalla la operación
+        }
+
     }
-    
+
 }

@@ -29,15 +29,12 @@ public class Ejercicio3 {
         numero3 = entrada.nextFloat();
         if((numero1>numero2) && (numero1>numero3)){ //condicional si el numero1 es mayor que el numero2 y el numero3 es mayor que el numero3 se cumple la condicion
             mayor = numero1; //si se da la condicion de que numero1 sea mayor lo guardo en la variable mayor
-            System.out.println("El numero mayor es el numero1: "+numero1); //imprimo por pantalla si se da esta opcion y ya no ejecuto las demas opciones
         }else if((numero2>numero1) && (numero2>numero3)){ //condicional si no se cumple la anterior condicion se da esta si el numero2 es mayor que el numero1 y numero3 se cumple la condicion
             mayor = numero2; //si se da la condicion de que numero2 sea mayor lo guardo en la variable mayor
-            System.out.println("El numero mayor es el numero2:"+numero2); //imprimo por pantalla si se da esta opcion y ya no ejecuto las demas opciones
         }else{ //si no se cumplen ninguna de las dos condiciones anteriores entonces se da esta que quiere decir que el numero3 es mayor que los demas numeros
             mayor = numero3; //si se da la condicion de que numero3 sea mayor lo guardo en la variable mayor
-            System.out.println("El numero mayor es el numero3:"+numero3); //imprimo por pantalla si se da esta opcion
         }
-        System.out.println("El numero mayor de los introducidos es :"+mayor);
+        System.out.println("El numero mayor de los introducidos es :"+mayor); //imprimo el mayor de los tres
         
     }
     

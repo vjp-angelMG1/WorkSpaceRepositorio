@@ -8,7 +8,7 @@ import java.util.Scanner; //importación de la clase java util el paquete scanne
 
 /**
  *
- * @author alumno
+ * @author Angel
  */
 public class Ejercicio1 {
 
@@ -22,7 +22,7 @@ public class Ejercicio1 {
         numero1 = entrada.nextInt(); //guardo el numero recibido por pantalla del usuario
         if (numero1>0){ //condicional si el numero es mayor que cero
             System.out.println("el numero es positivo"); //imprimo que el numero es positivo
-        }else if (numero1<0){ //condicional si el numero es menor que cero es negativo
+        }else{ //condicional si el numero es menor que cero es negativo
             System.out.println("el numero es negativo"); //imprimo por pantalla el resultado al darse la condicion
         }
         

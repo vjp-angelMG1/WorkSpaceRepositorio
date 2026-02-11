@@ -22,39 +22,26 @@ public class Ejercicio6 {
         nota = entrada.nextInt(); //recojo el valor de la variable y lo guardo en nota
         switch(nota){ //condicional para comprobar la determinada nota segun su ponderación
             case 0:
-                System.out.println("INSUFICIENTE"); //imprime el resultado de la elecion elegida
-                break; //al darse elecion por parte del usuario de la condicion permite que no siga ejecutandose la siguiente eleccion
             case 1:
-                System.out.println("INSUFICIENTE");
-                break; 
-            case 2:
-                System.out.println("INSUFICIENTE");
-                break;    
+            case 2:  
             case 3:
-                System.out.println("INSUFICIENTE");
-                break;
             case 4:
                 System.out.println("INSUFICIENTE");
-                break;
+                break;//al darse elecion por parte del usuario de la condicion permite que no siga ejecutandose la siguiente eleccion
             case 5:
-                System.out.println("SUFICIENTE");
-                break;
             case 6:
                 System.out.println("BIEN");
                 break;
             case 7:
-                System.out.println("NOTABLE");
-                break;
             case 8:
                 System.out.println("NOTABLE");
                 break;
             case 9:
-                System.out.println("SOBRESALIENTE");
-                break;
             case 10:
                 System.out.println("SOBRESALIENTE");
+                break;
             default: //permite ver que la eleccion no es correcta entre las opciones disponibles 
-                System.out.println("Error numero incorrecto"); //imprime el error de elegir otra opcion diferente a las que hay
+                System.out.println("Error numero incorrecto debe estar entre 0 y 10 "); //imprime el error de elegir otra opcion diferente a las que hay
         }
     }
 }
