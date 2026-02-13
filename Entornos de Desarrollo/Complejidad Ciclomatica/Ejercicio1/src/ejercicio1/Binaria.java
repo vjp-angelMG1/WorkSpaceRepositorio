@@ -39,5 +39,5 @@ public class Binaria {
 
         return respuesta;                                                   //intruccion 17     - NODO 14
 
-    } // fin metodo
+    } // fin metodo                                                         //Instruccion 18    - NODO 15                                
 }
