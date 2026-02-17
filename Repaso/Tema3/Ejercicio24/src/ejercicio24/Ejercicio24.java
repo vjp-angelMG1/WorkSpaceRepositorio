@@ -4,9 +4,10 @@
  */
 package ejercicio24;
 
-//• Ejercicio 24.- Crea un programa en JAVA que que imprima todos
+
 import java.util.Scanner;
 
+//• Ejercicio 24.- Crea un programa en JAVA que que imprima todos
 //los números múltiplos de 3 que existen entre el número 1 y otro
 //número introducido por el usuario. (for)
 //• Controla que el usuario te meta un número mayor que 0 y, sino,
@@ -20,10 +21,10 @@ public class Ejercicio24 {
 
     public static void main(String[] args) {
 
-        int num=1;
-        int num2;
-        int contadorMultiplosDe3 = 0;
-        Scanner entrada = new Scanner(System.in);
+        int num=1; //declaro variable y la inicializo
+        int num2; //declaro variable 
+        int contadorMultiplosDe3 = 0; //declaro variable y la inicializo
+        Scanner entrada = new Scanner(System.in); //creo objeto scanner para imprimir por pantalla
 
         //hago bucle do-while para comprobar que el número es mayor que 0 y si no que se repita el bucle
         do{  //bucle que se ejecuta al menos una vez
