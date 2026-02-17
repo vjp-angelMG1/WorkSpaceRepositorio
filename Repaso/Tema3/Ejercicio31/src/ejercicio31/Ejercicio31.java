@@ -23,7 +23,7 @@ public class Ejercicio31 {
         int contadorImpar = 0; //inicializo variables
         int contadorTotal = 0;
        
-        while(contadorImpar <3){
+        while(contadorImpar <4){
             aleatorio = Math.floor((Math.random()*100)+ 1); //guardo en la variable aleatorio un numero entre 1 y 100 en el que utilizo la clase mathRandom para redondear y mathfloor para truncar quitando los decimales 
             numeroAleatorio = (int)aleatorio; //realizo conversion explicita de variable de tipo double a int
             if(numeroAleatorio%2==1){ //condicional si el numero es impar
