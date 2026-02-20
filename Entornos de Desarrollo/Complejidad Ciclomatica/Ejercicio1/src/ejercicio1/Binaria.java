@@ -19,7 +19,7 @@ public class Binaria {
         int respuesta = -1;                                                 //intruccion 3
         int index;
 
-        while (umbral_inferior <= umbral_superior) {                          //instruccion 4     - NODO 2
+        while (umbral_inferior <= umbral_superior) {                        //instruccion 4     - NODO 2
 
             index = (umbral_inferior + umbral_superior) / 2;                 //instruccion 5     - NODO 3
 
@@ -27,17 +27,17 @@ public class Binaria {
 
                 respuesta = index;                                          //instruccion 7     - NODO 5
                 umbral_inferior = umbral_superior + 1;                       //instruccion 8
-            }//fin if                                                       //instruccion 9     - NODO 6
-            else if (array[index] < numero) {                                //instruccion 10    - NODO 7
+            }//fin if                                                       //instruccion 9     
+            else if (array[index] < numero) {                                //instruccion 10    - NODO 6
 
-                umbral_inferior = index + 1;                                 //instruccion 11    - NODO 8
-            } //fin else if                                                 //instruccion 12    - NODO 9
-            else {                                                          //instruccion 13    - NODO 10
-                umbral_superior = index -1;                                 //instruccion 14    -NODO 11
-            } // fin else                                                   //instruccion 15    -NODO 12
-        } // fin while                                                      //instruccion 16    -NODO 13
+                umbral_inferior = index + 1;                                 //instruccion 11    - NODO 7
+            } //fin else if                                                 //instruccion 12    - NODO 
+            else {                                                          //instruccion 13    - NODO 8
+                umbral_superior = index -1;                                 //instruccion 14    -NODO 9
+            } // fin else                                                   //instruccion 15    -NODO 
+        } // fin while                                                      //instruccion 16    -NODO 
 
-        return respuesta;                                                   //intruccion 17     - NODO 14
+        return respuesta;                                                   //intruccion 17     - NODO 10
 
     } // fin metodo
 }

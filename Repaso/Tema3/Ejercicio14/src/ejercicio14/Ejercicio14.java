@@ -21,7 +21,7 @@ public class Ejercicio14 {
                 contador++; //añado un contador para comprobar la de numeros que se realizan
             }
             numero++; //incremente un numero al bucle cada vez que se cumple la condicion para que lo ejecute justamente despues
-        } while (numero <= 100);//hasta que llegue a 100
+        } while (contador <= 100);//hasta que llegue a 100
         System.out.println("Cantidad de números pares"+contador); //Imprimo contatenando el contador
     }
 }
