@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group name="Trabajo Diario"/>
+=======
+        <group name="Trabajo Diario">
+            <file>file:/C:/Users/alumno/Desktop/Ejercicio1/src/ejercicio1/Binaria.java</file>
+            <file>file:/C:/Users/alumno/Desktop/Ejercicio1/test/ejercicio1/BinariaTest.java</file>
+            <file>file:/C:/Users/alumno/Desktop/Ejercicio1/src/ejercicio1/Ejercicio1.java</file>
+        </group>
+        <group name="Trabajo diario"/>
+>>>>>>> 3fefdb7e99efa63f27edf80527ccf8902a0209a4
     </open-files>
 </project-private>
