@@ -18,7 +18,7 @@ public class Ejercicio26 {
         for(num=111;num<=222;num++){ //bucle for para buscar entre los dos numeros en cada vuelta se incrementa el valor 
             if(num%2==1){ //Condicion que comprueba si el numero es impar
                 System.out.println("numero impares entre 111 y 222 :"+num); //imprime los numeros impares
-                suma +=num; //suma el numero impar que se acumula en la variable suma es equivalente suma mas numero guardandose en variable suma
+                suma +=num; //suma = suma + i;//suma el numero impar que se acumula en la variable suma es equivalente suma mas numero guardandose en variable suma
             }
         }
         System.out.println("Suma total de los numeros Numeros totales "+suma);//imprimo por pantalla el resultado total de la suma de los numeros impares

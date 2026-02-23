@@ -23,7 +23,7 @@ public class Ejercicio24 {
 
         int num=1; //declaro variable y la inicializo
         int num2; //declaro variable 
-        int contadorMultiplosDe3 = 0; //declaro variable y la inicializo
+        int contadorMultiplosDe3 = 0; //declaro variable y la inicializo en O 
         Scanner entrada = new Scanner(System.in); //creo objeto scanner para imprimir por pantalla
 
         //hago bucle do-while para comprobar que el número es mayor que 0 y si no que se repita el bucle
@@ -40,7 +40,7 @@ public class Ejercicio24 {
         //Hago el bucle for para mostrar los múltiplos de 3
         System.out.println("Los multiplos de 3 entre : " +num+ "y "+num2); //Imprimo por pantalla los numeros
         
-        for (num = 1; num <= num2; num++) { //bucle for para comprobar todos los numeros
+        for (num = 1; num <= num2; num++) { //bucle for para comprobar todos los numeros //sabes los numero que se van a repetir
             if(num%3 ==0){ //Condicional para ver los multiplos de 3 entre un numero y otro
                System.out.println(num); //imprimo por pantalla los numeros
                contadorMultiplosDe3++; //utilixo la variable contador para contar los numeros multiplos de 3

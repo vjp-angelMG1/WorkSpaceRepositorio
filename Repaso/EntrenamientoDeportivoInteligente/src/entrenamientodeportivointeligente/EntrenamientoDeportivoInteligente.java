@@ -17,15 +17,19 @@ public class EntrenamientoDeportivoInteligente {
     public static void main(String[] args) { //Creo método principal main
         
         Scanner entrada = new Scanner(System.in); //Creo objeto Scanner para introducir los datos que me pida el usuario
-        int numero;
-
-        do { //Creo bucle do while el cual se utiliza para menús
-                   //creo variables
+        int numero; //creo variables
         int series;
         int tiempoEnSegundos;
         int suma;
         suma = 0; //inicializo variable
         int tiempoMedioSerie;
+        double peso; //Creo variables
+        double altura;
+        double IMC;
+
+        do { //Creo bucle do while el cual se utiliza para menús
+                   
+
             System.out.println("Bienvenido al Reloj Deportivo"); //Imprimo el menú por pantalla
             System.out.println("Introduce un numero segun la funcion que quieras introducir");
             System.out.println("1-Series de Velocidad");
@@ -62,12 +66,11 @@ public class EntrenamientoDeportivoInteligente {
                             System.out.println("Introduce nuevamente tus pulsaciones");
                         }
                     }while(pulsaciones< 170); //mientras que las pulsaciones sean menor que 170 el bucle seguira repitiendose
+                        System.out.println("Limite alcanzado al Fin de entrenamiento");
                     break;
                 case 3: //caso 3
                     System.out.println("Calculadora de IMC"); //Imprimo por pantalla 
-                    double peso; //Creo variables
-                    double altura;
-                    double IMC;
+
                     System.out.println("Cuantos pesas?"); //Imprimo por pantalla 
                     peso = entrada.nextDouble(); //guardo en la variable valor que le pido al usuario  
                     System.out.println("Cuanto mides?"); //Imprimo por pantalla

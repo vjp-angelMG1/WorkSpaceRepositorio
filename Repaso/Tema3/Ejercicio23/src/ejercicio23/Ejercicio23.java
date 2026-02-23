@@ -35,7 +35,7 @@ public class Ejercicio23 {
             System.out.println(numero); //imprimo por pantalla los numeros entre numero y numero2
         
         }
-        entrada.nextInt(); //buffer
+
     }
     
 }
