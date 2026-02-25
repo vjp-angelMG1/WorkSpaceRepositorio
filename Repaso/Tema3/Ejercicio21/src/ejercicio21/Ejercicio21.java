@@ -13,21 +13,21 @@ import java.util.Scanner; //Importo la clase java util del paquete Scanner
 public class Ejercicio21 {
 
     public static void main(String[] args) {
-        int resultado;
+        int resultado; //Declaro las variables 
         int num1;
         int num2;
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Introduzce un número");
-        num1 = entrada.nextInt();
+        Scanner entrada = new Scanner(System.in); //creo objeto con el buffer Scanner
 
-        System.out.println("Introducr otro número");
-        num2 = entrada.nextInt();
         
-            try{
+            try{ //control de excepciones aqui atrapo el objeto 
+                System.out.println("Introduce un número"); //imprimo por pantalla el primer número
+                num1 = entrada.nextInt(); //guardo en la variable el valor que le pido al usuario
+                System.out.println("Introduce otro número"); //impimo por pantalla el segundo número
+                num2 = entrada.nextInt(); //guardo en la variable el valor que le pido al usuario
                 resultado = num1 / num2; //Resultado donde puede ocurrir la excepción
-            System.out.println("El resultado de la division"+resultado);
-            }catch(ArithmeticException e){
-            System.out.println("Error no se puede divir por cero");
+            System.out.println("El resultado de la division"+resultado); //imprimo por pantalla el resultado
+            }catch(ArithmeticException e){ //control de excepciones si el objeto que atrapo es una letra 
+            System.out.println("Error no se puede divir por cero"); //imprimo por pantalla que se introduce una letra y muestro el error
             }
         
     }
