@@ -24,11 +24,12 @@ public class Ejercicio22 {
         int num2;
         int resultado;
 
+
+       try{
         System.out.println("Porfavor introduce un número");
         num = entrada.nextInt();
         System.out.println("Por favor introduce otro número");
         num2 = entrada.nextInt ();
-       try{
         resultado = num + num2;
         System.out.println("El resultado de la suma es"+resultado);
        }catch(InputMismatchException e){
