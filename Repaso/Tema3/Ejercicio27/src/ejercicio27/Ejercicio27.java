@@ -69,6 +69,7 @@ public class Ejercicio27 {
                                 System.out.println("El resultado de la division es"+resultado); //imprimo por pantalla el resultado de la división
                             }catch(ArithmeticException e){ //al recojer un valor que impida la division en este caso el cero salta aquí siendo el resultado de la operación invalida 
                                 System.out.println("Error no se puede divir por cero"); //imprimo por pantalla el error
+                                
                             }
                         break; //igual
                     case 5: //caso 5

@@ -30,13 +30,13 @@ public class Ejercicio29 {
     public static void main(String[] args) { //creo el método main
         
         Scanner entrada = new Scanner(System.in); //creo objeto Scanner para leer datos del usuario
-        int numeroAleatorioAdivinar; //variable donde guardamos el número aleatorio a adivinar
-        int numero =0; //variable donde guardaremos el intento del usuario
+        double numeroAleatorioAdivinar; //variable donde guardamos el número aleatorio a adivinar
+        int intento = 0; //variable donde guardaremos el intento del usuario
         int contador = 0; //contador de intentos válidos realizados
         boolean acierto = false;
 
-        //generamos el número aleatorio entre 1 y 10 correctamente
-        numeroAleatorioAdivinar = (int)(Math.random() * 10) + 1;
+        //generamos el número aleatorio entre 1 y 100 correctamente
+        numeroAleatorioAdivinar = (int)(Math.random() * 11) + 1;
 
         System.out.println("Comienza el juego de adivinar el número (1-10)");
 
