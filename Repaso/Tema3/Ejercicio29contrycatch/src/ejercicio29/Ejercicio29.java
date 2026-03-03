@@ -34,7 +34,7 @@ public class Ejercicio29 {
         int intento = 0; //variable donde guardaremos el intento del usuario
         int contador = 0; //contador de intentos válidos realizados
         boolean acierto = false;
-
+        int numero;
         //generamos el número aleatorio entre 1 y 100 correctamente
         numeroAleatorioAdivinar = (int)(Math.random() * 11) + 1;
 

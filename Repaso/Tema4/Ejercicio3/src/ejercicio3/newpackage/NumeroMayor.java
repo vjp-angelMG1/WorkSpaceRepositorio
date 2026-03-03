@@ -19,14 +19,14 @@ El número mayor de los introducidos es el xxx
 public class NumeroMayor {
     
     public static void mayorK(int num1,int num2,int num3){ //creo metodo mayorK en otro paquete del proyecto
-        int aux; //declaro variables
+        
         if(num1>num2&&num1>num3){ //condicional si el primer numero es mayor imprimo con resultado
             System.out.println("El numero mayor de los introducidos es el numero 1: "+num1);
         }
-        if(num2>num1&&num2>num3){ //condicional si el segundo numero es mayor imprimo con resultado
+        else if(num2>num1&&num2>num3){ //condicional si el segundo numero es mayor imprimo con resultado
            System.out.println("El numero mayor de los introducidos es el numero 2:  "+num2);
         }
-        if(num3>num1&&num3>num2){ //condicional si el tercer numero es mayor imprimo con resultado
+        else{ //condicional si el tercer numero es mayor imprimo con resultado
             System.out.println("El numero mayor de los introducidos es el numero 3: "+num3);
         }
     }
