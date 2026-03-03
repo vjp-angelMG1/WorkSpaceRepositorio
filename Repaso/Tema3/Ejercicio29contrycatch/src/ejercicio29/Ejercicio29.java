@@ -46,16 +46,12 @@ public class Ejercicio29 {
 
             boolean valido = true; //bandera para saber si el intento es válido
          do{
+             
             //control de excepción para entradas que no sean números
             try {
-                numero = entrada.nextInt(); //leemos el número introducido
+                numero = entrada.nextInt(); //leemos el número introducido   
                 contador++; //contador de la veces que se realiza el bucle
-            }catch (InputMismatchException e) {
-                System.out.println("ERROR: Debes introducir un número entero"); //mensaje de error
-                entrada.nextLine(); //limpiar buffer del Scanner
-                valido = false; //marcamos intento como inválido
-                }
-                
+  
                 if (numero < numeroAleatorioAdivinar) { //si el intento es mayor
                     System.out.println("El número introducido es mayor que el aleatorio");
                 } else if (numero > numeroAleatorioAdivinar) { //si el intento es menor
@@ -65,7 +61,14 @@ public class Ejercicio29 {
                     
                     acierto=true; //devuelvo un true en caso de que el número sea correcto
                 }
-            }while(!acierto);//mientras el numero no sea acierto devolvemos el bucle
+                       
+            }catch (InputMismatchException e) {
+                System.out.println("ERROR: Debes introducir un número entero"); //mensaje de error
+                entrada.nextLine(); //limpiar buffer del Scanner
+                valido = false; //marcamos intento como inválido
+                }
+                
+              }while(!acierto);//mientras el numero no sea acierto devolvemos el bucle
          System.out.println("El número de veces que he contado es: "+contador);
     }
 }
