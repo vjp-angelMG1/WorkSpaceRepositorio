@@ -21,9 +21,10 @@ Introduzca un numero para calcular su tabla de multiplicar: 8
 public class Ejercicio10 {
 
  
-    public static void main(String[] args) {
-       
-           
+    public static void main(String[] args) { //Creo método main principal ejecutable
+         int numero; //declaro variable 
+         numero = Pedir.PedirNumero(); //guardo en la variable el numero que le pido al usuario en el metodo pedirNumero en la clase Pedir para que me devuelva el valor 
+         TablaDeMultiplicar.Tabla(numero); //llamo al metodo con la variable para obtener el resultado de la operacion
        }
     }
     
