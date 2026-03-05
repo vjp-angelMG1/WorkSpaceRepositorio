@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ejercicio12;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 /**
  *• Ejercicio 12.- Realiza un programa que le pida una
@@ -27,13 +28,17 @@ public class Ejercicio12 {
     
     public static int peticionContraseña(){ //Método para pedir al usuario un número de 4 cifras y lo devuelve 
         
-        int num; //declaro la variable 
+        int num = 0; //declaro la variable y la inicializo a -1 
         Scanner entrada = new Scanner (System.in); //creo objeto escanner
+        try{ //captura las excepciones
         System.out.println("Por favor introduce un numero de cuatro cifras "); //imprimo por pantalla
         num = entrada.nextInt(); //guardo la variable con el numero introducido por el usuario
-        return num; //devuelvo el numero
-
-   
+        
+        }catch(InputMismatchException e){ //en caso de la excepción que se captura es una letra salta e imprime el mensaje
+            System.out.println("Error has introducido una letra");
+            entrada.nextLine();//limpiar buffer
+        }
+        return num ; //devuelvo el numero
     }
     public static boolean comprobacionContraseña(int contraseña, int verdadera){ //metodo booleano que compara boolean con la contraseña correcta
         return contraseña == verdadera; //para enteros (simple y eficiente)
