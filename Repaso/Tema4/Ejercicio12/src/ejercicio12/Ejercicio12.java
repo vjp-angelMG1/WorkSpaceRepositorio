@@ -19,46 +19,50 @@ comprobación la haremos desde otro método.
 public class Ejercicio12 {
 
 
-    public static void main(String[] args) {
-        int contraseñaCorrecta =2345;
-        resultado(contraseñaCorrecta);
+    public static void main(String[] args) { //creo método main ejecutable
+        int contraseñaCorrecta; //declaro la variable
+        contraseñaCorrecta =2345; //inicializo la variable con el numero correcto de la contraseña
+        resultado(contraseñaCorrecta); //llamo al metodo para 
     }
     
-    public static int peticionContraseña(){
+    public static int peticionContraseña(){ //Método para pedir al usuario un número de 4 cifras y lo devuelve 
         
-        int num;
-        Scanner entrada = new Scanner (System.in);
-        System.out.println("Por favor introduce un numero de cuatro cifras ");
-        num = entrada.nextInt();
-        return num;
+        int num; //declaro la variable 
+        Scanner entrada = new Scanner (System.in); //creo objeto escanner
+        System.out.println("Por favor introduce un numero de cuatro cifras "); //imprimo por pantalla
+        num = entrada.nextInt(); //guardo la variable con el numero introducido por el usuario
+        return num; //devuelvo el numero
 
    
     }
-    public static boolean comprobacionContraseña(int contraseña, int verdadera){
-        return contraseña == verdadera;
+    public static boolean comprobacionContraseña(int contraseña, int verdadera){ //metodo booleano que compara boolean con la contraseña correcta
+        return contraseña == verdadera; //para enteros (simple y eficiente)
     }
-    public static int resultado(int contraseñaCorrecta){
-        int intentos = 3;
-        boolean acierto = false;
+    public static void resultado(int contraseñaCorrecta){ //Método principal que controla como maximo tres intentos con parámetros
+        int intentos;   //declaro variable 
+        boolean acierto;
+        intentos = 3; //inicializo la variable en 3 ya que son 3 intentos (*se podria hacer con bucle for)
+        acierto = false; //inicializo variable guardo false en acierto
         
-        while(intentos > 0 && !acierto){
-            int numIntroducido = peticionContraseña();
-            acierto = comprobacionContraseña(numIntroducido,contraseñaCorrecta);
+        while(intentos > 0 && !acierto){ //bucle mientras intentos sea menor que 0 y verdadero (distinto de falso)
+            int numIntroducido = peticionContraseña(); //guardo en la variable numIntroducido el numero que le pido al usuario en el otro metodo
+            acierto = comprobacionContraseña(numIntroducido,contraseñaCorrecta); //guardo en la variable actualizando el resultado si es verdadero, llamando al metodo me compare la contraseña introducida por el usuario a la otra que es correcta
             
-            if(acierto){
-                System.out.println("Has acertado el resultado es correcto"); 
-            } else {
-                intentos--;
-                if (intentos > 0){
-                    System.out.println("Contraseña incorrecta tienes "+intentos+ "intentos");
+            if(acierto){ //condicional si se cumple la condicion
+                System.out.println("Has acertado el resultado es correcto"); //imprimo por pantalla que es verdadero
+            } else { //si no se cumple la condicional
+                intentos--; //voy restandole intentos
+                if (intentos > 0){ //condicional si los intentos es menor que 0
+                    System.out.println("Contraseña incorrecta tienes "+intentos+ "intentos"); //imprimo por pantalla los intentos restantes
                 }
             }
             
         }
         
-        if (!acierto){
-            System.out.println("Error de acceso has completado el numero de intentos");
+        if (!acierto){ //condicional si es distinto al acierto
+            System.out.println("Error de acceso has completado el numero de intentos"); //imprimo por pantalla el error al completar el numero de acceso
         }
+       
     }
     
 }
