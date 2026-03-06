@@ -105,7 +105,7 @@ public class Ejercicio7 {
         }
     }
 
-    //Metod que calcula la temperatura media del mes
+    
     public static void temperaturaMedia(ArrayList<ArrayList<Integer>> lista, String[] diaSemana) { //metodo que calcula la temperatura media del mes con parametros
         if (lista.isEmpty()) { //condicional si la lista esta vacia
             System.out.println("Todavia no se ha introducido temperatura"); //imprimo por pantalla 
