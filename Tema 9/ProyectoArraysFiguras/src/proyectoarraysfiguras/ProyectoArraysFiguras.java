@@ -121,7 +121,7 @@ public class ProyectoArraysFiguras {
                 System.out.println("Error:  no hay figuras en la vitrina");
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Error: La posicion indicada no exite en la vitrina");
-            }
+            } 
 
         } while (opc != 4);
     }
