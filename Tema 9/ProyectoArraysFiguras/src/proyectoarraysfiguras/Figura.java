@@ -15,14 +15,14 @@ public class Figura {
     private float valor;
     private String coleccion;
 
-    // Constructor parametrizado
+        // Constructor por defecto 
     public Figura() {
         this.nombre = " ";
         this.valor = 0.0f;
         this.coleccion = " ";
     }
 
-    // Constructor por defecto 
+    // Constructor parametrizado
     public Figura(String nombre, float valor, String coleccion) {
         this.nombre = nombre;
         this.valor = valor;
