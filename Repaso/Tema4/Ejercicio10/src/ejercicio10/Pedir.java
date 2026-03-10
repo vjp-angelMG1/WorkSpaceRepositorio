@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Pedir {
     
-    public static int PedirNumero(){ //creo metodo pedir numero
+    public static int pedirNumero(){ //creo metodo pedir numero
         Scanner entrada = new Scanner(System.in); //creo objeto scanner que es un buffer
         System.out.println("Introducir un número para calcular la tabla de multiplicar: "); //imprimo por pantalla la orden
         int numero; //declaro la variable 
