@@ -26,7 +26,7 @@ public class Ejercicio21 {
         int numero = pedirPrimerNumero(); //declaro e inicializo la variable guardando en la variable la llamada al metodo
         int numero2 = pedirSegundoNumero(numero); //declaro e incializo la variable guardando en la variable el numero que sea mayor
 
-        mostrarSumaPares(numero, numero2); //llamo al metodo para que me muestre los pares
+        mostrarPares(numero, numero2); //llamo al metodo para que me muestre los pares
     }
 
     public static int pedirPrimerNumero() { //metodo para pedir el primer numero
@@ -35,7 +35,7 @@ public class Ejercicio21 {
         return entrada.nextInt(); //devuelvo el valor del numero que le pido al usuario
     }
 
-    // Método 2: pide el segundo número y comprueba que sea mayor
+  
     public static int pedirSegundoNumero(int primero) { //metodo para pedir el segundo numero
         Scanner entrada = new Scanner(System.in); //creo objeto escanner
         int num; //declaro variable 
@@ -54,7 +54,7 @@ public class Ejercicio21 {
     }
 
 
-    public static void mostrarSumaPares(int a, int b) { //metodo para calcular si el numero es par o impar con parametros
+    public static void mostrarPares(int a, int b) { //metodo para calcular si el numero es par o impar con parametros
         int suma = 0; //declaro e inicializo la variable a 0
 
         for (int i = a; i <= b; i++) { //bucle for para saber el recorrido de los numero pares

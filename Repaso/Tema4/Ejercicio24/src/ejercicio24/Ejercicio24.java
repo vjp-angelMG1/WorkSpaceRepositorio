@@ -22,7 +22,7 @@ public class Ejercicio24 {
         String nombre = pedirNombre(); //llamo al metodo y lo guardo el nombre en la variable String
         int edad = pedirEdad(); //llamo al metodo y guardo la edad la variable edad
 
-        mayorDeEdad(nombre, edad); //llamo al metodo mayor de edad para que me muestre el resultado en las variables
+        mayorDeEdad(nombre,edad); //llamo al metodo mayor de edad para que me muestre el resultado en las variables
     }
 
     public static String pedirNombre() { //metodo para pedir el nombre 
