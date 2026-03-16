@@ -52,7 +52,7 @@ public class Ejercicio27 {
     }
 
     public static int lanzarMoneda() { //metodo que lanza la moneda 
-        int caraOCruz = (int) Math.floor(Math.random() * 2);  //guardo en la variable utilizo la clase Math.floor para truncar los decimales y math random para el numero aleatorio
+        int caraOCruz = (int) (Math.random() * 2);  //guardo en la variable utilizo la clase Math.floor para truncar los decimales y math random para el numero aleatorio
         return caraOCruz;//devuelvo el resultado de la moneda
     }
 
