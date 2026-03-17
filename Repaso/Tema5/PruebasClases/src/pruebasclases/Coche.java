@@ -23,13 +23,13 @@ public class Coche {
         this.modelo = "";
         this.aniosAntiguedad = 0;
     }
-
+    //Parametrizado
     public Coche(String marca, String modelo, int aniosAntiguedad) {
         this.marca = marca;
         this.modelo = modelo;
         this.aniosAntiguedad = aniosAntiguedad;
     }
-    
+    //
     public Coche(String marca){
         this.marca = marca;
         this.modelo = "";
@@ -66,7 +66,7 @@ public class Coche {
         System.out.println("Anios Antiguedad: " + this.aniosAntiguedad);
     }
     
-
+    //Método toString()
     @Override
     public String toString() {
         return "Coche{" + "marca=" + marca + ", modelo=" + modelo + ", aniosAntiguedad=" + aniosAntiguedad + '}'; //devuelve los atributos muestra el valor de todos los atributos de la clase

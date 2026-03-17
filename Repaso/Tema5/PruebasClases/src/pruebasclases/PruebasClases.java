@@ -6,13 +6,14 @@ package pruebasclases;
 
 /**
  *
- * @author alumno
+ * @author Ángel
  */
 public class PruebasClases {
 
     
     public static void main(String[] args) {
        
+        
     }
     
 }
