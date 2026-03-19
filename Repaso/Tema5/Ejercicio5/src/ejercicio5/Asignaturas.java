@@ -27,6 +27,10 @@ public class Asignaturas{
         this.nota = nota;
     }
     
+    public Asignaturas(String nombre){//creo constructor que le paso el nombre pero la nota se la inicializo yo
+        this.nombre= nombre;
+        this.nota = 0;
+    }
     public String getNombre(){
         return nombre;
     }

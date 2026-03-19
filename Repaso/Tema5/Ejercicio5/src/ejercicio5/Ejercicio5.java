@@ -29,11 +29,11 @@ public class Ejercicio5 {
 
     
     public static void main(String[] args) {
-        Scanner nota = new Scanner(System.in);
+        
         Asignaturas programacion = new Asignaturas(); //creo los objetos con cada una de las asignaturas que pertenecen a la clase asignaturas con constructor por defecto
         programacion.setNombre("Programacion");
         System.out.println("Introduce la nota de programacion");
-        
+        programacion.getNota(pedirNota());
         Asignaturas LenguajeDeMarcas = new Asignaturas();
         Asignaturas BasesDeDatos = new Asignaturas();
         Asignaturas EntornosDeDesarrollo = new Asignaturas();
@@ -47,7 +47,9 @@ public class Ejercicio5 {
         
     }
     public static int pedirNota(){
-     
-    
+        int notas;
+        Scanner nota = new Scanner(System.in);
+        notas = nota.nextInt();
+        return notas;
     }
 }
