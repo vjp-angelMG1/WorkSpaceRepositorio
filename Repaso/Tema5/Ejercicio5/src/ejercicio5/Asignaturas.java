@@ -4,59 +4,57 @@
  */
 package ejercicio5;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Ángel
  */
-public class Asignaturas{
-        
+public class Asignaturas {
+
     private String nombre;
     private float nota;
-    
-    public Asignaturas(){
-    
+
+    public Asignaturas() {
+
         this.nombre = "";
         this.nota = 0;
     }
-    
-    public Asignaturas(String nombre,float nota){
-        
+
+    public Asignaturas(String nombre, float nota) {
+
         this.nombre = nombre;
         this.nota = nota;
     }
-    
-    public Asignaturas(String nombre){//creo constructor que le paso el nombre pero la nota se la inicializo yo
-        this.nombre= nombre;
+
+    public Asignaturas(String nombre) {//creo constructor que le paso el nombre pero la nota se la inicializo yo
+        this.nombre = nombre;
         this.nota = 0;
     }
-    public String getNombre(){
+
+    public String getNombre() {
         return nombre;
     }
-    public void setNombre(String nombre){
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public float getNota(){
+
+    public float getNota() {
         return nota;
     }
-    public void setNota(float nota){
+
+    public void setNota(float nota) {
         this.nota = nota;
     }
-    public void mostrarNota(){
-        System.out.println("la nota de Programación: es "+this.nota);
-        System.out.println("la nota de Lenguajes de Marcas: es "+this.nota);
-        System.out.println("la nota de Bases de Datos: es "+this.nota);
-        System.out.println("la nota de Entornos de Desarrollo: es "+this.nota);
-        System.out.println("la nota de Sistemas Informáticos: es "+this.nota);
-        System.out.println("la nota de Orientacion Laboral: es "+this.nota);
-        System.out.println("la nota media de todas las asignaturas es : "+nota/6);
+
+    public void mostrarNota() {
+
+        System.out.println("La nota de " + nombre + " es: " + nota);
     }
+
     //Método toString
     @Override
-    public String toString(){
+    public String toString() {
         return "Asignaturas{" + "nombre" + nombre + "nota" + nota + '}';
     }
-    
 
 }
