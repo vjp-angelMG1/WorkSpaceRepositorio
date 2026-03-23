@@ -15,8 +15,8 @@ public class Triangulo {
 
     public Triangulo() {
 
-        this.cateto1 = 0;
-        this.cateto2 = 0;
+        this.cateto1 = 0f;
+        this.cateto2 = 0f;
     }
 
     public Triangulo(float cateto1, float cateto2) {

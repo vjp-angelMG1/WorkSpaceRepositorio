@@ -58,6 +58,10 @@ public class Ejercicio16 {
         System.out.println(alumno1.toString()); //impirmo por pantalla el metodo tostring llamado por cada objeto que me muestra sus caracteristicas al ser un metodo return se puede realizar con un sout
         System.out.println(alumno2.toString());
         System.out.println(alumno3.toString());
+        
+        
+        
+        
     }
        
 }

@@ -31,16 +31,16 @@ public class Test {
          
         Numero num = new Numero(numero); //creo objeto num con el valor introducido netre parentesis
 
-        mostrarParImpar(num);//lamo al metodo que recibe el objeto mostrando si es par o no
+        mostrarParImpar(num.getNumero());//lamo al metodo que recibe el objeto mostrando si es par o no
 
     }
 
 
-    public static void mostrarParImpar(Numero num) { //metodo que recibe el objeto por parametros y muestra si es par o no
-        if (num.esPar()) { //Condicional si para comprobar si el objeto al llamar al metodo es par
-            System.out.println("El número " + num.getNumero() + " es par."); //si es par me devuelve el valor del numero par 
+    public static void mostrarParImpar(int num) { //metodo que recibe el objeto por parametros y muestra si es par o no
+        if (num % 2 == 0) { //Condicional si para comprobar si el objeto al llamar al metodo es par
+            System.out.println("El número " + num + " es par."); //si es par me devuelve el valor del numero par 
         } else { //condicional si no es par
-            System.out.println("El número " + num.getNumero() + " es impar."); //me devuelve el valor del numero impar
+            System.out.println("El número " + num + " es impar."); //me devuelve el valor del numero impar
         }
     }
     

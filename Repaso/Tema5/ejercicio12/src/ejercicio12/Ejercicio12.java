@@ -33,7 +33,7 @@ import java.util.Scanner;
         System.out.println("Hipotenusa: " + hipotenusa); //imprimo por pantalla la hipotenusa
     }
 
-    // 🔹 Pedir datos usando SET
+
     public static void pedirDatos(Triangulo triangulo) { //metodo para pedir los datos pasando por parametros el objeto en el que modifico los datos y los actualizo con set
         Scanner entrada = new Scanner(System.in); //creo objeto escanner
 
@@ -44,7 +44,7 @@ import java.util.Scanner;
         triangulo.setCateto2(entrada.nextFloat()); //introduzco el segundo cateto y lo actualizo con el set
     }
 
-    // 🔹 Calcular hipotenusa
+
     public static double calcularHipotenusa(Triangulo triangulo) {
         return Math.sqrt(triangulo.getCateto1() * triangulo.getCateto1() + triangulo.getCateto2() * triangulo.getCateto2());
     }
