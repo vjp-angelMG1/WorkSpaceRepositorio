@@ -44,22 +44,43 @@ public class Test {
 
     public static void main(String[] args) {
         
-        Rueda rueda1 = new Rueda("Hierro",20);
+        Rueda rueda1 = new Rueda("Hierro",20); //creo dos objetos ruedas con parametros
         Rueda rueda2 = new Rueda("Acero",40);
         
-        rueda1.mostrarRueda();
+        rueda1.mostrarRueda(); //muestro las ruedas
         rueda2.mostrarRueda();
         
-        System.out.println("mostrar rueda 1"+rueda1.toString());   
+        System.out.println("mostrar rueda 1"+rueda1.toString());    //muestro las ruedas con el toString opcional
         System.out.println("mostrar rueda 2"+rueda2.toString());
         
-        Coche coche1 = new Coche();
+        Coche coche1 = new Coche(); //creo tres objetos,establezco la marca y el modelo con set y muestro cada coche 
         
-        coche1.setMarca("Renault");
+        coche1.setMarca("Renault"); 
         coche1.setModelo("Megane");
-        coche1.mostrarCoche();
+        
+        
         Coche coche2 = new Coche();
+        coche2.setMarca("Skoda");
+        coche2.setModelo("Fabia");
+       
+        
         Coche coche3 = new Coche();
+        coche3.setMarca("Opel");
+        coche3.setModelo("Astra");
+        
+        
+        coche1.setRueda(rueda1); //establezco la rueda 1 para el coche 1
+        coche1.mostrarCoche();
+        
+        coche2.setRueda(rueda1); //establezco la rueda 1 para el coche 2
+        coche2.mostrarCoche();
+        
+        coche3.setRueda(rueda2); //establezco la rueda 3 para el coche 3
+        coche3.mostrarCoche();
+        
+        System.out.println(coche1.toString()); //imprimo por pantalla el toString de cada coche para que me muestre todos los atributos de ambas clases
+        System.out.println(coche2.toString());
+        System.out.println(coche3.toString());
     }
     
 }
