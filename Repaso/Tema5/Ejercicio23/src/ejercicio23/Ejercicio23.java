@@ -57,10 +57,9 @@ public class Ejercicio23 {
         //muestro los vehiculos taxi1,autobus1,taxi2 y autobus2 con el toString
         
         System.out.println("taxi 1 : "+taxi1.toString());
-        System.out.println("autobus 1 : "autobus1.);
-        
-        
-        
+        System.out.println("autobus 1 : "+autobus1.toString());
+        System.out.println("taxi 2 : "+taxi2.toString());
+        System.out.println("autobus 2 : "+autobus2.toString());
     }
     
 }
