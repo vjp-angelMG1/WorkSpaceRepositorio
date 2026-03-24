@@ -99,7 +99,6 @@ public class Empleado {
             sueldo += (horas - 40) * tarifa * 1.5; // calculo de las horas extras en las que añado al sueldo el resto de las 40 horas por la tarifa por la tarifa y media que paga la empresa
         }
 
-        empleado.setSalario(sueldo); // modifico el valor con el set en el que actualizo el sueldo actual
         System.out.println("El salario del  " + empleado.getNombre() + " es " + sueldo + "€"); //imprimo por pantalla el sueldo actual
     }
 

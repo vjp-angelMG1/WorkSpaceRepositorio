@@ -30,7 +30,7 @@ public class Ejercicio19 {
         Empleado empleado2 = new Empleado(Empleado.pedirNombre(), Empleado.pedirHoras(), Empleado.pedirTarifa());
         Empleado empleado3 = new Empleado(Empleado.pedirNombre(), Empleado.pedirHoras(), Empleado.pedirTarifa());
 
-        Empleado.mostrarSueldo(empleado1); //muestro el sueldo de cada empleado llamando al metodo mostrar
+        Empleado.mostrarSueldo(empleado1); //muestro el sueldo de cada empleado llamando al metodo mostrar la clase
         Empleado.mostrarSueldo(empleado2);
         Empleado.mostrarSueldo(empleado3);
         

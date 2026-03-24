@@ -38,7 +38,7 @@ public Coche(String marca, String modelo, Rueda rueda){
 
 }
 
-//Parametrizado (adicional)
+//Parametrizado (adicional) no lo necesito
 public Coche(String marca){
     this.marca = marca;
     this.modelo = "";

@@ -63,7 +63,7 @@ public class Empleado {
     public void mostrarEmpleado() {
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Salario: " + this.salario);
-        direccion.mostrarDireccion(); //muestro direccion del objeto de la clase direccion
+        this.direccion.mostrarDireccion(); //muestro direccion del objeto de la clase direccion
     }
     //METODO TOSTRING
     @Override
