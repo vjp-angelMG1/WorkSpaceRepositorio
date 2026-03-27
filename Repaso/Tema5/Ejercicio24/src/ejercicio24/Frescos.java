@@ -64,6 +64,6 @@ public class Frescos extends Producto{
     //Metodo ToString
     @Override
     public String toString() {
-        return "Frescos{" + "fechaDeEnvasado=" + fechaDeEnvasado + ", paisDeOrigen=" + paisDeOrigen + '}';
+        return super.toString()+"Frescos{" + "fechaDeEnvasado=" + fechaDeEnvasado + ", paisDeOrigen=" + paisDeOrigen + '}';
     }  
 }
