@@ -47,7 +47,8 @@ public class Congelados extends Producto{
     }
     //metodo mostrar
     public void mostrarCongelados(){
-        this.temperaturaDeCongelacionRecomendada = temperaturaDeCongelacionRecomendada;
+        mostrarProducto();
+        System.out.println("temperatura"+this.temperaturaDeCongelacionRecomendada);
     }
     //Metodo ToString
     @Override
