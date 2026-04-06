@@ -45,7 +45,7 @@ public class Cuenta {
         this.saldo = saldo;
     }
     //Getters y Setters
-    public double getSaldo() {
+    public float getSaldo() {
         return saldo;
     }
 
