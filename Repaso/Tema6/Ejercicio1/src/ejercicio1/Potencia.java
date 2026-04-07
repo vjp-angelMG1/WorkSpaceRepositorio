@@ -23,47 +23,42 @@ package ejercicio1;
  *
  * @author Angel
  */
-public class Suma extends Calculadora {
-
+public class Potencia extends Calculadora{
     //ATRIBUTOS
-    private int sumando;
-
+    private int exponente;
     //CONSTRUCTORES
     //por defecto
-    public Suma() {
+    public Potencia(){
         super();
-        this.sumando = 0;
+        this.exponente = 0;
     }
-
-    public Suma(int numero,int sumando) {
+    //parametrizado
+    public Potencia(int numero,int exponente){
         super(numero);
-        this.sumando = numero;
+        this.exponente = exponente;
+        
+    }
+    //Getters y Setters
+    public int getExponente() {
+        return exponente;
     }
 
-    public int getNumero() {
-        return sumando;
+    public void setExponente(int exponente) {
+        this.exponente = exponente;
     }
-
-    public void setNumero(int numero) {
-        this.sumando = numero;
+    
+    public void mostrarPotencia(){ //metodo mostrar potencia
+        mostrar();
+        System.out.println("Exponente :"+this.exponente);
     }
-
-    public void mostrarSuma() {
-        System.out.println("Numero :" + this.sumando);
+    @Override
+    public void realizarOperacion() { //metodo que tiene otros comportamientos diferentes y se hereda del metodo abstracto de la clase padre
+        int potenciaTotal = (getNumero()/this.exponente);
+        System.out.println("potencia :"+potenciaTotal);
     }
 
     @Override
-    public void realizarOperacion() {
-//        Suma: Tiene un atributo llamado sumando. El
-// * método realizarOperacion calcula la suma de los atributos sumando y numero y
-// * muestra el resultado por pantalla.
-       int Sumatotal = (getNumero()+this.sumando);
-        System.out.println("Total :"+Sumatotal);
+    public String toString() { //metodo toString
+        return "Potencia{" + "exponente=" + exponente + '}';
     }
-    
-    @Override
-    public String toString() {
-        return "Suma{" + "numero=" + sumando + '}';
-    }
-    
 }
