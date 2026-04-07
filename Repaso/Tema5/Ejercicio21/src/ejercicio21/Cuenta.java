@@ -53,7 +53,7 @@ public class Cuenta {
             this.saldo -= dinero;
         }
 
-        public void mostrar() {
+        public void mostrarCuenta() {
             System.out.println("dinero" + this.saldo);
         }
 

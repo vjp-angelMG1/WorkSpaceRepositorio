@@ -46,10 +46,10 @@ public class CuentaClave extends Cuenta { //creo cuentaClave siendo herencia de 
         }
         //metodo mostrar
         public void mostrar() {
-            System.out.println("Saldo: " + getSaldo());
+            mostrarCuenta();
             System.out.println("Clave: " + this.clave);
         }
-        //metodo toString
+        
         @Override
         public void extraer(float cantidad) {
             if (getSaldo() >= cantidad) {
