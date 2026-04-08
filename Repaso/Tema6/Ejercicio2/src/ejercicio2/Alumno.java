@@ -1,0 +1,61 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ejercicio2;
+
+/**
+ * * *• Ejercicio 2. – Desarrolla un programa en JAVA, orientado a objetos, en
+ * el que crees una clase llamada Persona que contenga un atributo nombre y el
+ * método abstracto saludar. Crea también las clases Profesor (hereda de Persona
+ * y tiene el atributo especialidad) y Alumno (hereda de Persona y tiene el
+ * atributo grupo). • Dependiendo del tipo de persona (profesor o alumno) el
+ * método saludar devolverá un String con un saludo del tipo “Hola, soy el
+ * alumno … y estoy en el grupo de …) o bien “Hola, soy el profesor … y soy de
+ * la especialidad de …). • Crea una clase Test en la que instancies un objeto
+ * de cada subclase implementada anteriormente y pruebes el método saludar de
+ * cada objeto. • Posteriormente, utiliza el polimorfismo para crear cada uno de
+ * los objetos a partir de la superclase Persona y prueba los métodos
+ * implementados nuevamente.
+ *
+ * @author Angel
+ */
+public class Alumno extends Persona { //hereda de la clase padre 
+    //Atributos
+    private String grupo;
+    //CONSTRUCTORES
+    //parametrizado
+    public Alumno(){
+        super();
+        this.grupo = "";
+    }
+    //por defecto
+    public Alumno(String nombre,String grupo){ 
+        super(nombre);
+        this.grupo = grupo;
+    }
+    //Getters y Setters
+    public String getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(String grupo) {
+        this.grupo = grupo;
+    }
+    //metodo mostraralumno
+    public void mostrarAlumno(){
+        System.out.println("Grupo :"+this.grupo);
+    }
+    //metodo saludar heredado del metodo abstracto de la clase padre
+    @Override
+    public String saludar() {
+        return "Hola, soy el alumno " + getNombre() + " y estoy en el grupo de "+this.grupo;
+    }
+    //metodo toString
+    @Override
+    public String toString() {
+        return "Alumno{" + "grupo=" + grupo + '}';
+    }
+    
+
+}

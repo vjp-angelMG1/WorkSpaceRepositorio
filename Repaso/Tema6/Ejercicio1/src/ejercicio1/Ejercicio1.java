@@ -29,7 +29,7 @@ métodos implementados nuevamente.
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-
+        System.out.println("OBJETOS DE LAS SUBCLASES");
         Suma suma = new Suma(4,6); //creo 3 objetos de las subclases
         Multiplicacion multiplicacion = new Multiplicacion(3,7);
         Potencia potencia = new Potencia(5,6);
@@ -38,6 +38,7 @@ public class Ejercicio1 {
         multiplicacion.realizarOperacion();
         potencia.realizarOperacion();
         
+        System.out.println("POLIMORFISMO");
         Calculadora calculadora = new Suma(7,5); //creo 3 objetos con polimorfismo apartir de la clase padre
         Calculadora calculadora1 = new Multiplicacion(8,6);
         Calculadora calculadora2 = new Potencia(6,3);

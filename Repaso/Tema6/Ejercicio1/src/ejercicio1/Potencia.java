@@ -53,8 +53,8 @@ public class Potencia extends Calculadora{
     }
     @Override
     public void realizarOperacion() { //metodo que tiene otros comportamientos diferentes y se hereda del metodo abstracto de la clase padre
-        int potenciaTotal = (getNumero()/this.exponente);
-        System.out.println("potencia :"+potenciaTotal);
+        double potenciaTotal = Math.pow(getNumero(),this.exponente); //para calcular el exponente tengo que utilizar la clase Math.pow y el tipo de dato double si no no funciona
+        System.out.println("Potencia :"+potenciaTotal);
     }
 
     @Override
