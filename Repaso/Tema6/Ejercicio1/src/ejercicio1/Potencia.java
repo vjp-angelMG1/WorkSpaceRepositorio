@@ -59,6 +59,6 @@ public class Potencia extends Calculadora{
 
     @Override
     public String toString() { //metodo toString
-        return "Potencia{" + "exponente=" + exponente + '}';
+        return super.toString()+"Potencia{" + "exponente=" + exponente + '}';
     }
 }

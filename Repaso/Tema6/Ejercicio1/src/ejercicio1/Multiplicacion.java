@@ -59,7 +59,7 @@ public class Multiplicacion extends Calculadora {
 
     @Override
     public String toString() {
-        return "Multiplicacion{" + "multiplicador=" + multiplicador + '}';
+        return super.toString()+"Multiplicacion{" + "multiplicador=" + multiplicador + '}';
     }
 
 }

@@ -39,7 +39,7 @@ public class Suma extends Calculadora {
         super(numero);
         this.sumando = numero;
     }
-
+    //Getters y Setters
     public int getNumero() {
         return sumando;
     }
@@ -49,9 +49,10 @@ public class Suma extends Calculadora {
     }
 
     public void mostrarSuma() {
+        mostrar();
         System.out.println("Numero :" + this.sumando);
     }
-
+    
     @Override
     public void realizarOperacion() {
 //        Suma: Tiene un atributo llamado sumando. El
@@ -63,7 +64,7 @@ public class Suma extends Calculadora {
     
     @Override
     public String toString() {
-        return "Suma{" + "numero=" + sumando + '}';
+        return super.toString()+"Suma{" + "numero=" + sumando + '}';
     }
     
 }
