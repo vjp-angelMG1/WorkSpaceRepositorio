@@ -48,7 +48,7 @@ public class Profesor extends Persona {
     }
     //metodo mostrar
     public void mostrarProfesor(){
-        mostrarProfesor();
+        mostrarPersona();
         System.out.println("Especialidad"+this.especialidad);
     }
     
@@ -60,7 +60,7 @@ public class Profesor extends Persona {
     //metodo ToString
     @Override
     public String toString() {
-        return "Profesor{" + "especialidad=" + especialidad + '}';
+        return super.toString()+"Profesor{" + "especialidad=" + especialidad + '}';
     } 
     
 }

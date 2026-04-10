@@ -44,6 +44,7 @@ public class Alumno extends Persona { //hereda de la clase padre
     }
     //metodo mostraralumno
     public void mostrarAlumno(){
+        mostrarPersona();
         System.out.println("Grupo :"+this.grupo);
     }
     //metodo saludar heredado del metodo abstracto de la clase padre
@@ -54,7 +55,7 @@ public class Alumno extends Persona { //hereda de la clase padre
     //metodo toString
     @Override
     public String toString() {
-        return "Alumno{" + "grupo=" + grupo + '}';
+        return super.toString()+"Alumno{" + "grupo=" + grupo + '}';
     }
     
 

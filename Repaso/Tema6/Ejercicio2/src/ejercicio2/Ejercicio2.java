@@ -28,7 +28,7 @@ public class Ejercicio2 {
 
 
     public static void main(String[] args) { //metodo principal main 
-        System.out.println("Objetos subclases"); //creo 3 objetos de las subclases 
+        System.out.println("Objetos subclases"); //creo 2 objetos de las subclases 
         Profesor profesor = new Profesor("Juan","CMC");
         Alumno alumno = new Alumno("Pepa","2ºB");
         

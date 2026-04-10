@@ -61,7 +61,6 @@ public class Ejercicio3 {
         FiguraGeometrica figuraC = new Circulo(5.5,"granate"); //creo objetos desde la clase padre con polimorfismo
         FiguraGeometrica figuraCD = new Cuadrado(3.7,"blanco");
         FiguraGeometrica figuraRC = new Rectangulo(20.9,10,"ocre");
-        FiguraGeometrica figuraT = new Triangulo(24,11,"gris");
         FiguraGeometrica figuraTR = new TrianguloRectangulo(26,32,"dorado");
         System.out.println("CIRCULO");
         figuraC.area(); //muestro las areas y los perimetros de las figuras atraves del polimorfismo
@@ -72,9 +71,6 @@ public class Ejercicio3 {
         System.out.println("RECTANGULO");
         figuraRC.area();
         figuraRC.perimetro();
-        System.out.println("TRIANGULO");
-        figuraT.area();
-        figuraT.perimetro();
         System.out.println("TRIANGULO RECTANGULO");
         figuraTR.area();
         figuraTR.perimetro();

@@ -39,7 +39,7 @@ public class TrianguloRectangulo extends Triangulo { //hereda de triangulo
     }
 
     //metodo para calcular la hipotenusa y devolver el resultado con la clase math.hypot la suma de los catetos al cuadrado
-    public double hipotenusa() {
+    public double obtenerHipotenusa() {
         return Math.hypot(getBasecm(), getAlturacm());
     }
 
@@ -56,7 +56,6 @@ public class TrianguloRectangulo extends Triangulo { //hereda de triangulo
 
     //metodo mostrar
     public void mostrarTrianguloRectangulo() {
-        mostrarFiguraGeometrica();
         mostrarTriangulo();
     }
 

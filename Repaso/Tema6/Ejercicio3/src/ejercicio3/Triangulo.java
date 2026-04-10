@@ -29,7 +29,7 @@ los métodos implementados nuevamente.
 * 
  * @author Angel
  */
-public class Triangulo extends FiguraGeometrica {
+public abstract class Triangulo extends FiguraGeometrica {
     //ATRIBUTOS
     private double basecm;
     private double alturacm;
