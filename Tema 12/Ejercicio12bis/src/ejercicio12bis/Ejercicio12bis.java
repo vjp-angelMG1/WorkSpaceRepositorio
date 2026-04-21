@@ -9,7 +9,7 @@ import java.io.IOException; //importo la clase IOException (para leer un archivo
 import java.io.FileReader; //importo la clase FileReader (para leer archivos de texto completos con mas comodidad)
 import java.io.BufferedReader; //importo la clase BufferedReader(para leer archivos de texto completos)
 import java.util.InputMismatchException;//importo la clase InputMismatchException(para las excepciones de las letras)
-import java.util.Scanner;//importo la clase Scanner 
+import java.util.Scanner;//importo la clase Scanner  
 
 /**
  * • Ejercicio 12 (bis).- Realiza un programa en JAVA que lea un archivo creado
