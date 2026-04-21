@@ -13,7 +13,7 @@ import java.util.*;
  * frase.txt en fraseinvertida.txt. 3. Leer fraseinvertida.txt. 4. Salir.
  * • Captura las excepciones que veas necesarias.
  *
- * @author alumno
+ * @author Angel    
  */
 public class Ejercicio9 {
 
@@ -22,22 +22,6 @@ public class Ejercicio9 {
 
     public static void main(String[] args) { //metodo principal main ejecutable
         Scanner entrada = new Scanner(System.in); //creo objeto scanner
-
-        // --- INICIO COMPROBACIÓN INTELIGENTE ---
-        File arch = new File(FICHERO); //apuntando al fichero guardo el nombre en un objeto
-
-        if (!arch.exists()) { //condicional para ver si el archivo existe del fichero 
-            System.out.println("El fichero no existe todavia, se creara uno por defecto");
-            try (FileWriter fw = new FileWriter(FICHERO);PrintWriter pw = new PrintWriter(fw)) { //// Creo el acceso al fichero para que se abra y se cierre de manera idependiente y para poder escribir le paso el objeto creado por parametros a la impresora
-                
-                pw.println("Hola, esta es una frase de prueba."); //escribo frases por defecto
-                pw.println("El ejercicio 9 funciona correctamente."); //escribo frases por defecto
-                
-            } catch (IOException e) {
-                System.out.println("Error al escribir el fichero: " + e.getMessage()); //muestro el mensaje de la captura de la exccepcion
-            }
-        }
-        // --- FIN COMPROBACIÓN INTELIGENTE ---
 
         int opc = -1; //declaro e inicializo variables para que no tenga problemas con el control de excepciones
 
