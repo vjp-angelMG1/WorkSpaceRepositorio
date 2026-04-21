@@ -11,5 +11,11 @@
                 <root id="test.src.dir"/>
             </test-roots>
         </data>
+<<<<<<< HEAD
+=======
+        <libraries xmlns="http://www.netbeans.org/ns/ant-project-libraries/1">
+            <definitions>.\lib\nblibraries.properties</definitions>
+        </libraries>
+>>>>>>> c44043bb38efb5081f3369f2c5c8022ec2320de8
     </configuration>
 </project>
