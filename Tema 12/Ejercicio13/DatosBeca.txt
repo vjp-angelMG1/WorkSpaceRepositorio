@@ -1,0 +1,8 @@
+Becario: perico palote
+Sexo: h | Edad: 45 años
+Suspensos: 3 | Residencia Familiar: si
+Ingresos anuales: 840.0€
+Becario: Manuel Garcia Matos
+Sexo: H | Edad: 56 años
+Suspensos: 0 | Residencia Familiar: no
+Ingresos anuales: 4000.0€
