@@ -1,0 +1,2 @@
+Juan Lopez Hernandez;H;26;0;SI;30000.0
+Carmen Sanchez Vazquez;H;27;0;SI;40000.0
