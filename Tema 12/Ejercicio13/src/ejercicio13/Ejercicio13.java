@@ -76,6 +76,7 @@ public class Ejercicio13 {
             pw.println("Suspensos: " + suspensos + " | Residencia Familiar: " + residencia);
             pw.println("Ingresos anuales: " + ingresos + "€");
             System.out.println("**********"); // Imprimo una línea separadora
+            
         }
     }
 

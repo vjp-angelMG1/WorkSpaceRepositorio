@@ -8,17 +8,13 @@ import java.io.*; //importo todas las clases de el paquete io y util
 import java.util.*;
 
 /**
-• Ejercicio 05.- Realiza un programa en JAVA en el que muestres un
-menú que te permita 3 opciones:
-1. Añadir un contacto a un fichero de texto (“agenda.txt”) en el que
-indiques en cada línea:
-• Un Nombre.
-• Una Edad.
-• Un número de teléfono.
-2. Mostrar por pantalla el contenido del fichero de texto creado.
-3. Salir del Programa.
-• Captura las excepciones que veas necesarias.
-* 
+ * • Ejercicio 05.- Realiza un programa en JAVA en el que muestres un menú que
+ * te permita 3 opciones: 1. Añadir un contacto a un fichero de texto
+ * (“agenda.txt”) en el que indiques en cada línea: • Un Nombre. • Una Edad. •
+ * Un número de teléfono. 2. Mostrar por pantalla el contenido del fichero de
+ * texto creado. 3. Salir del Programa. • Captura las excepciones que veas
+ * necesarias.
+ *
  * @author Angel
  */
 public class Ejercicio5 {
@@ -42,13 +38,15 @@ public class Ejercicio5 {
                     case 3:
                         System.out.println("Saliendo del programa..."); //imprimo por pantalla para que salga del programa
                         break;
-                    default: //por defecto
+                    default: //por defecto&
                         System.out.println("Error: la opcion no es la correcta"); //imprimo por pantalla
                     }
 
             } catch (InputMismatchException e) {
                 System.out.println("Error. Has intruducido una letra");
                 entrada.nextLine();
+            } catch (FileNotFoundException e) {
+                System.out.println("Error no se ha encontrado el archivo" + e.getMessage());
             } catch (Exception e) {
                 System.out.println("Error desconocido");
                 entrada.nextLine();
@@ -65,12 +63,17 @@ public class Ejercicio5 {
         System.out.println("3.Salir del programa");
 
     }
+    public static String pedirNombre(){
+    Scanner entrada = new Scanner(System.in);
+    return entrada.nextLine();
+    }
+    
 
     public static void añadirContacto() throws FileNotFoundException, IOException { //metodo para añadir contactos lanzando las excepciones con el throws
         Scanner entrada = new Scanner(System.in); //creo objeto escanner
         // Pedimos los datos que tiene el contacto al usuario
         System.out.println("Introduce su nombre: ");
-        String nombreDelContacto = entrada.nextLine(); //guardo en la variable el nombre que le pido al usuario
+        String nombre = pedirNombre();
         System.out.println("Introduce la edad: ");
         String edad = entrada.nextLine(); //guardo en la variable la edad 
         System.out.println("Introduce el teléfono: ");
@@ -78,19 +81,14 @@ public class Ejercicio5 {
 
         try (FileWriter fw = new FileWriter("agenda.txt", true); PrintWriter pw = new PrintWriter(fw)) {//creo un control de excepciones con recursos con FileWriter y PrinWriter para escribir y imprimir en la agenda por lineas
 
-            pw.print("Nombre: " + nombreDelContacto); //imprimo por lineas los diferentes contactos 
-            pw.print("Edad: " + edad);
-            pw.print("Teléfono: " + telefono);
+            pw.println(nombre + ";"); //imprimo por lineas los diferentes contactos 
+            pw.print(edad);
+            pw.print(telefono);
             System.out.println("El contacto ha sido guardado");
-
-        } catch (IOException e) { //capturo las excepciones por si hay algun error
-
-            System.out.println("Error al escribir en la agenda: " + e.getMessage()); //muesto por pantalla el mensaje de la excepcion
         }
-
     }
 
-    public static void mostrarContenido() { //metodo para mostrar el contenido del fichero
+    public static void mostrarContenido() throws FileNotFoundException, IOException { //metodo para mostrar el contenido del fichero
 
         File fichero = new File("agenda.txt"); //creo objeto apuntado al fichero
 
@@ -109,10 +107,6 @@ public class Ejercicio5 {
             while ((linea = br.readLine()) != null) { //bucle mientras la linea no sea null sigo mostrandola
                 System.out.println(linea);
             }
-
-        } catch (IOException e) { //capturo la excepcion
-            System.out.println("Error al leer en la agenda: " + e.getMessage()); //muestro por pantalla el mensaje de la excepcion
         }
     }
 }
-
