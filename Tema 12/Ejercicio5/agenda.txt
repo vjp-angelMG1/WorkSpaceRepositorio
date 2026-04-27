@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 Nombre: derEdad: 23Teléfono: 6453423435Nombre: asdaEdad: 12Teléfono: 2312413Nombre: seraEdad: 67Teléfono: 4564564Nombre: sedrweEdad: 45Teléfono: 453534
+=======
+Nombre: derEdad: 23Teléfono: 6453423435Nombre: aewqe
+Edad: 23Teléfono: 2131231Nombre: sad
+Edad: 23Teléfono: 123123Nombre: sad
+Edad: 23Teléfono: 123123Nombre: sad
+Edad: 23Teléfono: 123123Nombre: ewrqwer
+Edad: 13Teléfono: 2134124Nombre: ewrqwer
+Edad: 13Teléfono: 2134124Nombre: ewrqwer
+Edad: 13Teléfono: 2134124Nombre: aweqweq
+Edad: 23Teléfono: qweq212312Nombre: aweqweq
+Edad: 23Teléfono: qweq212312Nombre: aweqweq
+Edad: 23Teléfono: qweq212312Nombre: asda
+Edad: 23Teléfono: 123123123Nombre: asda
+Edad: 23Teléfono: 123123123Nombre: asda
+Edad: 23Teléfono: 123123123
+>>>>>>> 8d6bbd76a0adb41ccef22a22b406cd1f539ebc77
