@@ -37,22 +37,17 @@ public class Ejercicio5 {
                     case 3:
                         System.out.println("Saliendo del programa..."); //imprimo por pantalla para que salga del programa
                         break;
-                    default: //por defecto&
+                    default: //por defecto
                         System.out.println("Error: la opcion no es la correcta"); //imprimo por pantalla
                     }
 
             } catch (InputMismatchException e) {
                 System.out.println("Error. Has intruducido una letra");
                 entrada.nextLine();
-<<<<<<< HEAD
-            } catch (FileNotFoundException e) {
-                System.out.println("Error no se ha encontrado el archivo" + e.getMessage());
-=======
 
             } catch (FileNotFoundException e) {
                 System.out.println("Error el archivo no ha podido ser encontrado o algo a fallado");
->>>>>>> 8d6bbd76a0adb41ccef22a22b406cd1f539ebc77
-            } catch (Exception e) {
+            } catch (IOException e) {
                 System.out.println("Error desconocido");
                 entrada.nextLine();
             }
@@ -72,31 +67,19 @@ public class Ejercicio5 {
         return opcion = entrada.nextInt();
 
     }
-    public static String pedirNombre(){
-    Scanner entrada = new Scanner(System.in);
-    return entrada.nextLine();
-    }
-    
 
     public static void añadirContacto() throws FileNotFoundException, IOException { //metodo para añadir contactos lanzando las excepciones con el throws
         Scanner entrada = new Scanner(System.in); //creo objeto escanner
         
         // Pedimos los datos que tiene el contacto al usuario
         System.out.println("Introduce su nombre: ");
-        String nombre = pedirNombre();
+        String nombreDelContacto = entrada.nextLine(); //guardo en la variable el nombre que le pido al usuario
         System.out.println("Introduce la edad: ");
         String edad = entrada.nextLine(); //guardo en la variable la edad 
         System.out.println("Introduce el teléfono: ");
         String telefono = entrada.nextLine();//guardo en la variable el telefono
        
         try (FileWriter fw = new FileWriter("agenda.txt", true); PrintWriter pw = new PrintWriter(fw)) {//creo un control de excepciones con recursos con FileWriter y PrinWriter para escribir y imprimir en la agenda por lineas
-<<<<<<< HEAD
-
-            pw.println(nombre + ";"); //imprimo por lineas los diferentes contactos 
-            pw.print(edad);
-            pw.print(telefono);
-            System.out.println("El contacto ha sido guardado");
-=======
             for (int i=0;i<3;i++){
             pw.println("Nombre: " + nombreDelContacto); //imprimo por lineas los diferentes contactos 
             pw.println("Edad: " + edad);
@@ -104,15 +87,11 @@ public class Ejercicio5 {
             }
             System.out.println("El contacto ha sido guardado");
             
->>>>>>> 8d6bbd76a0adb41ccef22a22b406cd1f539ebc77
         }
+
     }
 
-<<<<<<< HEAD
-    public static void mostrarContenido() throws FileNotFoundException, IOException { //metodo para mostrar el contenido del fichero
-=======
     public static void mostrarContenido() throws FileNotFoundException, IOException{ //metodo para mostrar el contenido del fichero
->>>>>>> 8d6bbd76a0adb41ccef22a22b406cd1f539ebc77
 
         File fichero = new File("agenda.txt"); //creo objeto apuntado al fichero
 
@@ -132,10 +111,7 @@ public class Ejercicio5 {
             while ((linea = br.readLine()) != null) { //bucle mientras la linea no sea null sigo mostrandola
                 System.out.println(linea);
             }
-<<<<<<< HEAD
-=======
 
->>>>>>> 8d6bbd76a0adb41ccef22a22b406cd1f539ebc77
         }
     }
 }
